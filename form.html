@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Form</title>
+	<style type="text/css">
+		h2 {
+			text-align: center;
+		}
+	</style>
+</head>
+<body>
+
+	<h2>Form In HTML</h2>
+
+<!-- 	<button type="button">Submit</button>
+		
+	Method = GET
+
+	<input type="submit" name="" value="Send"> -->
+
+
+	<fieldset>
+		<legend>Registration Form</legend>
+	<form method="POST" action="" enctype="multipart/form-data">
+
+		<label>Name</label>
+		<input type="text" name="name" placeholder="Enter Your Name" value="Sharvan" required autocomplete="off" disabled readonly>
+		<br><br>
+		<label>Email</label>
+		<input type="email"  placeholder="Enter Your Email" name="email" required>
+		<br><br>
+		<label>Mobile No</label>
+		<input type="number" name="">
+		<br><br>
+
+		<label>URL</label>
+		<input type="url" name="" value="https://www.facebook.com/">
+
+		<br>
+		<br>
+
+		<input type="hidden" name="uid" value="5465">
+
+		<label>Color</label>
+		<input type="color" name="">
+		<br><br>
+		<label>Password</label>
+		<input type="password" name="">
+		<br><br>
+		<label>Gender</label>
+		<input type="radio" name="gender" value="Male" checked>Male
+		<input type="radio" name="gender" value="Female">Female
+
+		<br><br>
+
+		<label>Hobby</label>
+
+		<input type="checkbox" name="hobby" value="Cricket">Cricket
+		<input type="checkbox" name="hobby" value="Footabll" checked>Footabll
+		<input type="checkbox" name="hobby" value="Badminton">Badminton
+
+		<br><br>
+
+		<label>City</label>
+		<!-- multiple size="2" -->
+		<select name="city" >
+			<option value="">Select</option>
+			<option value="Junagadh">Junagadh</option>
+			<option value="Bhavnagar" selected>Bhavnagar</option>
+			<option value="Nalanda">Nalanda</option>
+		</select>
+		<br><br>
+
+		<label>Address</label>
+
+		<textarea name="Address"></textarea>
+
+		<br><br>
+
+		<label>DOB</label>
+		<input type="date" name="" min="2021-08-03" max="2021-08-08">
+		<br><br>
+
+		<label>Date & Time</label>
+
+		<input type="datetime-local" name="">
+		<br><br>
+
+
+		<label>Time</label>
+
+		<input type="time" name="">
+		<br><br>
+
+		<label>Month</label>
+
+		<input type="month" name="">
+		<br><br>
+
+		<label>Week</label>
+
+		<input type="week" name="">
+		<br><br>
+
+		<label>Search</label>
+		<input type="search" name="">
+		<br><br>
+
+		<label>Range</label>
+		<input type="range" name="" value="1" min="0" max="10">	
+
+		<br><br>
+
+		<label>Profile Pic</label>
+		<input type="file" name="" multiple>
+		<br><br>
+		<input type="submit" name="submit">
+
+		<input type="reset" name="">
+		<!-- <button type="button">Submit</button>
+
+		<input type="submit" name="" value="Send"> -->
+	</form>
+	</fieldset>
+</body>
+</html>
