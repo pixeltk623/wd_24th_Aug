@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Novell service </title>
+	<style type="text/css">
+		table tr th,td {
+			padding: 10px;
+		}
+	</style>
+</head>
+<body>
+
+<center><h2>Novell Services Login </h2></center> <br>
+
+<table align="center"> 
+
+	<form>	
+	<tr>
+		<th align="left"> Username : </th>
+		<td> <input type="text" name="Username"></td>
+	</tr>
+
+	<tr>
+		<th align="left"> Password :  </th>
+		<td> <input type="password" name="pwd"></td>
+	</tr>
+
+	<tr>
+		<th align="left"> City of  </th>
+		<td> <input type="text" name="City"></td>
+	</tr>
+
+	<tr>
+		<th align="left"> Employment : </th>
+		<td> <input type="text" name="em"></td>
+	</tr>
+
+	<tr>
+		<th align="left"> Web server: </th>
+		<td> <select name="web-server">
+				<option value=""> -- Choose a server --</option>
+				<option value="php"> PHP </option>
+				<option value="java">JAVA </option>
+				<option value="python"> PYTHON</option>
+			 </select>
+		</td>
+	</tr>
+
+	<tr>
+		<th align="left"> Please specify <br> your role: </th>
+		<td><input type="radio" name="role" value="Admin"> Admin <br>
+			<input type="radio" name="role" value="Engineer"> Engineer <br>
+			<input type="radio" name="role" value="manager"> Manager <br>
+			<input type="radio" name="role" value="guest"> Guest <br>
+		</td>
+	</tr>
+
+	<tr>
+		<th align="left"> Single Sign-on <br> to the following: </th>
+		<td> <input type="checkbox" name="sign" value="Mail"> Mail <br>
+		<input type="checkbox" name="sign" value="payroll"> Payroll <br>
+		<input type="checkbox" name="sign" value="self-service"> Self-service </td>
+ 	</tr>
+
+ 	<tr> 
+ 		<td colspan="2" align="center">
+ 		<button name="submit" value="login"> Login</button>
+ 		<button name="submit" name="reset"> Reset </button>
+ 		</td>
+ 	</tr>
+
+	</form>
+</table>
+
+</body>
+</html>

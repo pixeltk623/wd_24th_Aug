@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Zoo keeper Application Form </title>
+	<style type="text/css">
+		
+	h1{
+		margin-left: 40px;
+		margin-top: 40px;
+	}
+	i{
+		margin-left: 40px;
+	}
+	fieldset{
+		margin-left: 40px;
+		width: 50%;
+	}
+	table tr td{
+		padding: 6px;
+	}
+	button{
+		height: 35px;
+		width: 10%;
+		padding-top: ;  
+		margin: 40px; 
+	}
+
+	</style>
+</head>
+<body>
+
+	<h1> Zoo Keeper Application Form </h1>
+	<i> Please complete the form Mandatory Fields are marked with a* </i> <br><br> 
+
+	<fieldset>
+		<table>
+		<legend><h3> CONTACT DETAILS </h3></legend>
+		<form>
+			
+			<tr>
+				<td>Name</td>
+				<td> <input type="text" name="nm" required> </td>
+			</tr>
+
+			<tr>
+				<td>Telephone </td>
+				<td> <input type="number" name="no"> </td>
+			</tr>
+
+			<tr>
+				<td>Email</td>
+				<td> <input type="email" name="mail" required> </td>
+			</tr>
+
+		</form>
+		</table>
+	</fieldset> <br>
+
+	<fieldset>
+		<table>
+		<legend> <h3> PERSONAL INFORMATION </h3> </legend>
+		<form>
+			
+			<tr>
+				<td>Age </td>
+				<td> <input type="number" name="age"> </td>
+			</tr>
+
+			<tr>
+				<td>Gender </td>
+				<td> <select name="Gender">
+					 <option> Male </option>
+					 <option> Female </option>
+					 <option> Ogther </option>
+					</select>
+				</td>
+			</tr>
+
+			<tr>
+				<td>
+					When did you <br> first know you <br> 
+					wanted to be a <br>
+					zoo-keeper ??
+				</td>
+				<td> <textarea cols="30" rows="6"> </textarea>	</td>
+			</tr>
+
+		</form>
+		</table>
+	</fieldset> <br>
+
+	<fieldset>
+		<table>
+		<form>
+		<legend> <h3> PICK YOUR FAVOURITE ANIMALS </h3> </legend>
+
+		<tr>
+			<td>
+				<input type="checkbox" name="pick_animal" value="Zebra"> Zebra
+				<input type="checkbox" name="pick_animal" value="cat"> Cat
+				<input type="checkbox" name="pick_animal" value="anaconda"> Anaconda
+				<input type="checkbox" name="pick_animal" value="human"> Human <br>
+				<input type="checkbox" name="pick_animal" value="elephant"> Elephant
+				<input type="checkbox" name="pick_animal" value="wildebeest"> Wildebeest
+				<input type="checkbox" name="pick_animal" value="pigeon"> Pigeon
+				<input type="checkbox" name="pick_animal" value="Crab"> Crab 
+			</td>
+		</tr>
+
+		</form>	
+		</table> 
+	</fieldset> 
+
+	<button name="submit" value="submit"> Submit Application </button>
+
+</body>
+</html>

@@ -1,0 +1,408 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title> Table </title>
+	<style type="text/css">
+		
+		h1{
+			text-align: center;
+			color: blue;
+			text-decoration: underline;
+		}
+
+		table tr td,th {
+			padding: 15px;
+			font-size: 120%;
+		}
+
+		table tr td{
+			text-align: center;
+		}
+
+	</style>
+</head>
+<body>
+
+<h1> Tables </h1>
+
+<h2> Basic HTML Table </h2> 
+
+	<table border="3" height="250" width="60%">
+		
+		<th> leve 1 </th>
+		<th> level 2 </th>
+		<th> level 3</th>
+		<th> level info</th>
+		<th> name </th>
+
+		<tr>
+			<td rowspan="6"> system </td>
+			<td rowspan="4"> system app </td>
+			<td rowspan="3"> systemEnv </td>
+			<td> app test </td>
+			<td> foo </td>
+		</tr>
+
+		<tr>
+			<td> App Memory</td>
+			<td> Foo</td>
+		</tr>
+
+		<tr>
+			<td> app test </td>
+			<td> foo </td>
+		</tr>
+
+		<tr>
+			<td> SystemEnv2</td>
+			<td> App Test</td>
+			<td> bar</td>
+		</tr>
+
+		<tr>
+			<td rowspan="2"> System Memory </td>
+			<td rowspan="2"> Memory Test </td>
+			<td> Memory Func</td>
+			<td> Foo </td>
+		</tr>
+
+		<tr>
+			<td> app test </td>
+			<td> foo </td>
+		</tr>
+
+	</table>
+
+
+							<!-- Seminar  -->
+
+		<h2> Seminar </h2>
+ 
+		<table height="30%" width="45%" border="2">
+
+			<tr>
+				<th rowspan="3"> Day </th>
+				<th colspan="3"> Seminar </th>
+			</tr>
+
+			<tr>
+				<th colspan="2"> Schedule</th>
+				<th rowspan="2"> Topic </th>
+			</tr>
+
+			<tr>
+				<th> Begin</th>
+				<th> End </th>
+			</tr>
+
+			<tr>
+				<td rowspan="2"> Monday </td>
+				<td rowspan="2"> 8:00 a.m. </td>
+				<td rowspan="2"> 5:00 p.m. </td>
+				<td> Indrocution to XML</td>
+			</tr>
+
+			<tr>
+				<td> Validity: DTD and Relax NG </td>
+			</tr>
+
+			<tr>
+				<td rowspan="6">Tuesday</td>
+				<td rowspan="2"> 8:00 a.m. </td>
+				<td rowspan="2"> 11:00 a.m.</td>
+				<td rowspan="3"> XPATH </td>
+			</tr>
+
+			<tr></tr>
+
+			<tr>
+				<td rowspan="2"> 8:00 a.m. </td>
+				<td rowspan="2"> 11:00 a.m.</td>
+			</tr>
+			<tr>
+				<td rowspan="3"> XSL Transformation </td>
+			</tr>
+			<tr>
+				<td rowspan="2"> 8:00 a.m. </td>
+				<td rowspan="2"> 11:00 a.m.</td>
+				
+			</tr>
+
+			<tr>
+				
+			</tr>
+
+			 <tr>
+				<td>Wednesday</td>
+				<td> 8:00 a.m. </td>
+				<td>12:00 p.m. </td>
+				<td> XSL Formatting Objects</td>
+			</tr>
+
+		</table>
+
+
+				<!-- Customer -->
+
+		<h2> Customer </h2>
+
+		<table border="2" height="80%" width="40%" style="border-collapse: collapse;">
+				
+			<tr> 
+				<th rowspan="11"> TCB </th>
+				<th> Order No. </th>
+				<td colspan="3"> #ABC001 </td>
+			</tr>
+
+			<tr> 
+				<th> Order Date </th>
+				<td colspan="3"> 23-Mar-2016 </td>
+			</tr>
+
+			<tr> 
+				<th colspan="4"> Customer </th>
+			</tr>
+
+			<tr> 
+				<th> Name:  </th>
+				<td colspan="3"> John Papas </td>
+			</tr>
+
+			<tr> 
+				<th> Address: </th>
+				<td colspan="3"> Independence Day 5th str , 11511 </td>
+			</tr>
+
+			<tr> 
+				<th colspan="4"> Order Details </th>
+			</tr>
+
+			<tr>
+				<td> 1 </td>
+				<td> Of Mice and Men </td>
+				<td> Book </td>
+				<td> 10.00</td>
+			</tr>
+
+			<tr>
+				<td> 2 </td>
+				<td> Les Miserables </td>
+				<td> Book </td>
+				<td> 12.00</td>
+			</tr>
+
+			<tr>
+				<td> 3 </td>
+				<td> Game of Thrones - S01 </td>
+				<td> DVD </td>
+				<td> 50.00</td>
+			</tr>
+
+			<tr>
+				<td> 4 </td>
+				<td> Samsung Galaxy </td>
+				<td> Mobile Phone </td>
+				<td> 200.00</td>
+			</tr>
+
+			<tr>
+				<th colspan="3" align="rigth"> Total </th>
+				<td> 272.00 </td>
+			</tr>
+
+		</table>
+
+
+						<!-- my multi level table  -->
+
+		<h2 style="background-color: lightgrey;text-align: center;width: 45%;margin-bottom: 1px;"> 
+		My Multi Level Table </h2>
+
+		<table border="1" height="30%" width="45%">
+			
+			<tr>
+				<th colspan="2" rowspan="2"> Column 0 </th>
+				<th rowspan="2"> Column 1 </th>
+				<th colspan="2"> Column 2 </th>
+			</tr>
+
+			<tr>
+				<th> Column 2a </th>
+				<th> Column 2b </th>
+			</tr>
+
+			<tr>
+				<th rowspan="2"> Row 1 </th>
+				<th> Row 1a </th>
+				<td> 123 </td>
+				<td> 456</td>
+				<td> 789 </td>
+			</tr>
+
+			<tr>
+				<th> Row 1b </th>
+				<td> 123 </td>
+				<td> 456</td>
+				<td> 789 </td>
+			</tr>
+
+			<tr>
+				<th colspan="2"> Row 2 </th>
+				<td> 123 </td>
+				<td> 456</td>
+				<td> 789 </td>
+			</tr>
+
+		</table>
+
+
+					<!-- TIME TABLE  -->
+
+		<h2> Time Table </h2>
+
+		<table border="3" width="80%" style="border-collapse: collapse;">
+			
+			<tr>
+				<th> Day/period </th>
+				<th> I <br> 9:30 - 10:20 </th>
+				<th> II <br> 10:20 - 11:10 </th>
+				<th> III <br> 11:10 - 12:00 </th>
+				<th> 12:00 - 12:40 </th>
+				<th> IV <br> 12:40 - 1:30 </th>
+				<th> V <br> 1:30 - 2:20 </th>
+				<th> VI <br> 2:20 - 3:10 </th>
+				<th> VII <br> 3:10 - 4:00 </th>
+			</tr>
+
+			<tr>
+				<th> Monday </th>
+				<td> Eng </td>
+				<td> Mat </td>
+				<td> Che </td>
+				<th rowspan="6"> L<br>U<br>N<br>C<br>H </th>
+				<td colspan="3"> LAB </td>
+				<td>Play</td>
+			</tr>
+
+			<tr>
+				<th> Tuesday </th>
+				<td colspan="3"> LAB </td>
+				<td> Eng </td>
+				<td> Che </td>
+				<td> Mat </td>
+				<td> Sports </td>
+			</tr>
+
+			<tr>
+				<th> Wednesday </th>
+				<td> Mat </td>
+				<td> Phy </td>
+				<td> Eng </td>
+				<td> Che </td>
+				<td colspan="3"> LIBRARY </td>
+			</tr>
+
+			<tr>
+				<th> Thursday </th>
+				<td> Phy </td>
+				<td> Eng </td>
+				<td> Che </td>
+				<td colspan="3"> LAB </td>
+				<td> Mat </td>
+			</tr>
+
+			<tr>
+				<th> Friday </th>
+				<td colspan="3"> LAB </td>
+				<td> Mat </td>
+				<td> Che </td>
+				<td> Eng </td>
+				<td> Play </td>
+			</tr>
+
+			<tr>
+				<th> Saturday </th>
+				<td> Eng </td>
+				<td> Che </td>
+				<td> Mat </td>
+				<td colspan="3"> SEMINAR </td>
+				<td> Sports </td>
+			</tr>
+
+		</table> 
+
+				<!-- BILL TABLE -->
+
+		<h2> BILL TABLE </h2>
+
+		<table border="3" height="50%" width="70%" style="border-color: blue;">
+			<tr>
+				<th colspan="3"> Purchase order : 987654321 </th>
+				<th> Tutorialbrain - 10th Oct 2020 </th>
+			</tr>
+
+			<tr>
+				<td colspan="2"> 
+					<b> Vendor : </b>  <br>
+					ABC XYZ ltd. <br>
+					DUMMY STREET <br>
+					BULDING 123 <br>
+					HAZARIB , JHARKHAND ,825301
+				</td>
+				<td colspan="2">
+					<b> SHIP TO: </b> <br>
+					MS DHONI <br>
+					WILSON GARDEN <br>
+					SOUTHEAST BLOCK , RANCHI - 834001
+				</td>
+			</tr>
+
+			<tr>
+				<th> Qty. </th>
+				<th> Item Code. </th>
+				<th> Description </th>
+				<th> Unit Price </th>
+			</tr>
+
+			<tr>
+				<td> 100 </td>
+				<td> IABCDE</td>
+				<td> Pencils </td>
+				<td> 20.00 </td>
+			</tr>
+
+			<tr>
+				<td> 1000 </td>
+				<td> In877</td>
+				<td> Notebook </td>
+				<td> 100.00 </td>
+			</tr>
+
+			<tr>
+				<td> 500 </td>
+				<td> IP8675 </td>
+				<td> Pens </td>
+				<td> 70.00 </td>
+			</tr>
+
+			<tr>
+				<th colspan="3"> Subtotal </th>
+				<td> 190.00 </td>
+			</tr>
+
+			<tr>
+				<th colspan="2"> GST </th>
+				<td> 5% </td>
+				<td> 9.50 </td>
+			</tr>
+
+			<tr>
+				<th colspan="3"> Grand Total </th>
+				<td> $ 199.50 </td>
+			</tr>
+
+
+		</table>
+
+</body>
+</html>

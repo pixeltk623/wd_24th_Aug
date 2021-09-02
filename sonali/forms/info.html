@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title> Information Form </title>
+	<style type="text/css">
+		
+		table{
+			height: 300px;
+			width: 25%;
+		}
+
+	</style>
+</head>
+<body>
+
+	<table border="2">
+		<form>
+			<tr>
+				<th> Name </th>
+				<th> Value </th>
+			</tr>
+			<tr>
+				<td>Name</td>
+				<td><input type="text" name="nm"></td>
+			</tr>
+			<tr>
+				<td>Sex</td>
+				<td><input type="radio" name="gender" value="male"> Male <br>
+					<input type="radio" name="gender" value="female" checked> Female
+				</td>
+			</tr>
+			<tr>
+				<td>Eye Color</td>
+				<td> <select name="eye">
+					 <option value="green"> Green </option>
+					 <option value="brown"> Brown </option>
+					 <option value="black"> Black </option>
+					 <option value="blue"> Blue </option>
+					 </select>
+				</td>
+			</tr>
+			<tr>
+				<td>Check all that apply</td>
+				<td><input type="checkbox" name="apply" value="tall"> Over 6 feet tall <br> 
+					<input type="Checkbox" name="apply" value="pounds"> Over 200 pounds
+				</td>
+			</tr>
+			<tr>
+				<td colspan="2"> Describe your athletic ability: <br>
+				<textarea cols="50" rows="5"></textarea></td>
+			</tr>
+			<tr>
+				<td colspan="2" align="center"> 
+					<button name="submit" name="information"> Enter my information</button> 
+				</td>
+			</tr>
+		</form>
+	</table>
+
+</body>
+</html>
