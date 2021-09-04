@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Layout</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="icon" href="https://www.gurukul.ac.in/images/demo/sitetop.png">
+	<style type="text/css">
+		* {
+			padding: 0;
+			margin: 0;
+			box-sizing: border-box;
+		}
+		header {
+			border: 1px solid black;
+			text-align: center;
+			padding: 10px;
+		}
+
+		nav {
+			border: 1px solid black;
+			background-color: black;
+			overflow: hidden;
+		}
+
+		nav ul {
+			list-style-type: none;
+			overflow: hidden;
+		}
+
+		nav ul li {
+			float: left;
+
+		}
+		nav ul li a {
+			text-decoration: none;
+			color: white;
+			display: inline-block;
+			padding: 15px 20px;
+			font-size: 20px;
+			font-family: cursive;
+		}
+		aside {
+			border: 1px solid black;
+			width: 20%;
+			float: left;
+			height: 400px;
+			padding: 10px;
+		}
+		main {
+			border: 1px solid black;
+			width: 60%;
+			float: left;
+			height: 400px;
+			padding: 10px;
+		}
+		footer {
+			border: 1px solid black;
+			padding: 10px;
+			text-align: center;
+		}
+		nav ul li:hover {
+			background-color: grey;
+		}
+
+		.active {
+			background-color: grey;
+		}
+
+		.right {
+			float: right;
+		}
+		section::after {
+			content: "";
+			display: table;
+			clear: both;
+		}
+
+		@media screen and (min-width: 320px) and (max-width: 800px) {
+
+    		nav ul li {
+    			float: none;
+    			text-align: center;
+    		}
+
+    		.right {
+    			float: none;
+    		}
+		}
+	</style>
+</head>
+<body>
+	<header>
+		<h1>Tops Technology Vadodara</h1>
+	</header>
+	<nav>
+		<ul>
+			<li class="active"> <a href="">Home</a> </li>
+			<li> <a href="">About</a> </li>
+			<li> <a href="">Service</a> </li>
+			<li> <a href="">Contact</a> </li>
+			<li class="right"> <a href="">Blog</a> </li>
+		</ul>
+	</nav>
+	<section>
+		<aside>
+			<h3>Left SideBar</h3>
+		</aside>
+		<main>
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+			tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+			quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+			consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+			cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+			proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+		</main>
+		<aside>
+			<h3>Right SideBar</h3>
+		</aside>
+	</section>
+	<footer>
+		<h2>Footer</h2>
+	</footer>
+</body>
+</html>
