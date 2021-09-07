@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title> Video in HTML </title>
+	<style type="text/css">
+		
+		h1{
+			text-align: center;
+		}
+
+	</style>
+</head>
+<body>
+
+	<h1> Media in HTML </h1>
+	<h3> Video in HTML </h3>
+	<hr>
+
+	<button type="button" onclick="video_PlayPause()"> Play/Pause</button>
+	<button type="button" onclick="make_big()"> Make Big </button>
+	<button type="button" onclick="make_normal()"> Make Normal </button> <br><br>
+
+	<video controls id="my_video" width="30%"  height="300px" autoplay muted>
+		<source src="jungle.mp4" type="video/mp4">
+	</video>
+
+	<script type="text/javascript">
+		
+		var my_video = document.getElementById('my_video');
+		console.log(my_video);
+		function video_PlayPause() 
+		{
+			
+			if (my_video.paused) {
+				my_video.play();
+			}
+			else{
+				my_video.pause();
+			}
+		}
+		function make_big() 
+		{
+			my_video.width = "500";
+		}
+		function make_normal() 
+		{
+			my_video.width="30";
+		}
+
+	</script>
+
+</body>
+</html>
