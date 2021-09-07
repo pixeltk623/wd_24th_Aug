@@ -20,7 +20,7 @@
 			text-align: center;
 			padding: 20px;
 		}
-		aside{
+		/*aside{
 			border: 2px solid black;
 			width: 15%;
 			float: left;
@@ -34,6 +34,23 @@
 			float: right;
 			text-align: center;
 			padding: 70px 200px 250px 0px;
+		}*/
+
+	
+		div.col-left {
+			width: 85%;
+			float: left;
+		}
+
+		div.right-side {
+			width: 15%;
+			float: left;
+		}
+
+		.row::after {
+			content: "";
+			display: table;
+			clear: both;
 		}
 		footer{
 			border: 2px solid black;
@@ -41,7 +58,7 @@
 			padding: 40px;
 		}
 		
-		@media screen and (min-width: 320px) and (max-width: 800px){
+/*		@media screen and (min-width: 320px) and (max-width: 800px){
 
 			main{
 				text-align: center;
@@ -50,7 +67,7 @@
 				float: none;
 			}
 		}
-
+*/
 	</style>
 </head>
 <body>
@@ -63,14 +80,20 @@
 		<h2>Navigation Bar</h2>
 	</nav>
 
-	<section>
-		<aside> 
-			<h2> Index </h2> 
-		</aside>
-		<main> 
-			<h2> Content Section </h2>
-		</main>
-	</section>
+	<main>
+		<div class="row">
+			
+			<div class="right-side">
+				<h2> Index </h2> 
+			</div>
+			<div class="col-left"> 
+				<h2> Index </h2> 
+			</div>
+		</div>
+		
+	</main>
+
+
 
 	<footer>
 		<h2> Footer Section </h2>
