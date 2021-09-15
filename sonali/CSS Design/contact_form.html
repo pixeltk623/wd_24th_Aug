@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title> Contact Us form </title>
+	<link rel="icon" type="text/css" href="https://www.tops-int.com/wp-content/uploads/2019/03/logo.png" height="5px" width="7px">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<style type="text/css">
+		
+		*{
+			padding: 0px;
+			margin: 0px;
+			box-sizing: border-box; 
+		}
+		.head_col{
+			width: 100%;
+			background: #153E4D;
+			height: 50px;
+		}
+		.left_col{
+			text-align: center;
+			float: left;
+			width: 50%;
+			padding-top: 10px; 
+		}
+		.right_col{
+			text-align: center;
+			float: left;
+			width: 50%;
+			padding-top: 10px;
+		}
+		.left_col a{
+			text-decoration: none;
+			color: white;
+			font-size: 20px;
+			font-family: Arial; 
+			display: inline-block;
+			padding: 0px 10px 0px 10px;
+		}
+		.left_col a:hover{
+			color: lightblue;
+		}
+		.right_col a{
+			text-decoration: none;
+			color: white;
+			font-size: 20px;
+			font-family: Arial; 
+			padding: 0px 10px 0px 10px;
+			display: inline-block;	
+		}
+		.right_col a:hover{
+			color: skyblue;
+		}
+		nav{
+			padding: 25px;
+			font-family: 'Poppins', Arial,Helvetica,sans-serif;
+		}
+		.navbar{
+			height: 100px;
+		}
+		nav a{
+			text-decoration: none;
+			display: inline-block;
+			padding: 25px 25px 25px 0px;
+			font-size: 22px;
+			color: black;
+		}
+		nav a:hover{
+			color: #09f;
+		}
+		nav ul{
+			padding: 0;
+			margin: 0;
+			list-style-type: none;
+			margin-left: 250px;
+			overflow: hidden;
+		}
+		nav ul li{
+			float: left;
+		}
+		.left_head{
+			width: 30%;
+			float: left;
+			text-align: center
+		}
+		.right_head{
+			width: 70%;
+			float: left;
+			text-align: center;
+		}
+		section.background{
+			background-image: url(tree3.jpg);
+			width: 100%;
+			height: 600px;
+			background-size: cover;
+			background-repeat: no-repeat;
+		}
+		h1{
+			font-size: 100px;
+			color: white;
+			left: 550px;
+			top: 430px;
+			position: absolute;
+		}
+		.container{
+			background: #f2f2f2;
+			padding: 15px;
+		}
+		label{
+			padding: 15px;
+			display: inline-block;
+		}
+		.left_text{
+			width: 25%;
+			float: left;
+		}
+		.right_text{
+			width: 75%;
+			float: left;
+		}
+		.row::after{
+			content: "";
+			display: table;
+			clear: both;
+		}
+		input[type=text],select,textarea{
+			padding: 10px;
+			width: 100%;
+			border-radius: 3px;
+			border:  1px solid lightgrey;
+		}
+		textarea{
+			resize: vertical;
+			height: 250px;
+		}
+		input[type=button]{
+			float: right;
+			border-radius: 3px;
+			border: none;
+			background: #4CAF50;
+			color: white;
+			cursor: pointer;
+			padding: 10px 20px;
+			margin-top: 10px;
+		}
+		input[type=button]:hover{
+			background: green;
+		}
+
+		@media screen and (min-width: 320px) and (max-width: 480px){
+			.left_text{
+				float: none;
+				width: 100%;
+			}
+			.right_text{
+				float: none;
+				width: 100%;
+			}
+			input[type=button]{
+				width: 100%;
+			}
+			.container{
+				padding: 5px;
+			}
+			label{
+				padding: 8px;
+			}
+			input[type=text],select,textarea{
+				margin: 0;
+			}
+		}
+	</style>
+</head>
+<body>
+
+	<div class="head_top">
+		<div class="head_col">
+			
+			<div class="left_col">
+				<a href=""> IT Training </a>
+				<a href=""> Outsourcing </a>
+				<a href=""> Placement </a>
+				<a href=""> Contat Us </a>
+			</div>
+
+			<div class="right_col">
+				<i class="fa fa-phone" aria-hidden="true"></i><a href=""> Request a call back </a>
+				<i class="fa fa-whatsapp" aria-hidden="true"></i><a href=""> +91 908765431 </a>
+			</div>
+
+		</div>
+	</div>
+
+	<nav>
+		<div class="navbar">
+				<div class="left_head">
+					<img src="https://www.tops-int.com/wp-content/uploads/2019/03/logo.png">
+				</div>
+
+				<div class="right_head">
+					<ul>
+						<li><a href=""> Classroom </a></li>
+						<li><a href=""> Online </a></li>
+						<li><a href=""> Study </a></li>
+						<li><a href=""> Abroad </a></li>
+						<li><a href=""> Location </a></li>
+						<li><a href=""> Blog </a></li>	
+					</ul>
+				</div>
+		</div>
+	</nav>
+
+	<section class="background">
+		<h1>Contact Us</h1>
+	</section>
+
+	<main>
+		<div class="container">
+			<div class="row">
+				<div class="left_text">
+					<label> First Name</label>
+				</div>
+				<div class="right_text">
+					<input type="text" name="fname" placeholder="Your First Name...">
+				</div>
+			</div>
+
+			<div class="row">
+				<div class="left_text">
+					<label> Last Name</label>
+				</div>
+				<div class="right_text">
+					<input type="text" name="fname" placeholder="Your Lirst Name...">
+				</div>
+			</div>
+
+			<div class="row">
+				<div class="left_text">
+					<label> Country</label>
+				</div>
+				<div class="right_text">
+					<select name="country">
+						<option value="India"> India </option>
+						<option value="USA"> USA </option>
+						<option value="UK"> UK </option>
+					</select>
+				</div>
+			</div>
+
+			<div class="row">
+				<div class="left_text">
+					<label> Subject </label>
+				</div>
+				<div class="right_text">
+					<textarea placeholder="Write Something..."></textarea>
+				</div>
+			</div>
+
+			<div class="row">
+				<input type="button" name="submit" value="Submit">
+			</div>
+		</div>
+	</main>
+
+</body>
+</html>

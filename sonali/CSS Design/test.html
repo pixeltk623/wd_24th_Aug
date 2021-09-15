@@ -1,0 +1,499 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title> Buttons Test</title>
+	<style type="text/css">
+		
+		section{
+			padding: 20px; 
+		}
+		h1{
+			font-family: Candara; 
+		}
+		input[name="css_button"]{
+			background: #00cc00;
+			color: white;
+			margin-left: 20px;
+			padding: 10px 25px 10px 25px;
+			border: none; 	
+		}
+		hr{
+			margin-top: 40px;
+		}
+		.colors{
+			padding: 20px;
+		}
+		input[name="button1"]{
+			border: none;
+			padding: 15px 25px 15px 25px;
+			background-color: #00cc00;
+			color: white;
+		}
+		input[name="button2"]{
+			border: none;
+			padding: 15px 25px 15px 25px;
+			background-color: blue;
+			color: white;
+		}
+		input[name="button3"]{
+			border: none;
+			padding: 15px 25px 15px 25px;
+			background-color: red;
+			color: white;
+		}
+		input[name="button4"]{
+			border: none;
+			padding: 15px 25px 15px 25px;
+			background-color: lightgrey;
+			color: black;
+		}
+		input[name="button5"]{
+			border: none;
+			padding: 15px 25px 15px 25px;
+			background-color: black;
+			color: white;
+		}
+		input[name="button6"]{
+			border: none;
+			padding: 10px 20px 10px 20px;
+			background-color: #00cc00;
+			color: white;
+			font-size: 10px;
+		}
+		input[name="button7"]{
+			border: none;
+			padding: 12px 20px 10px 20px;
+			background-color: blue;
+			color: white;
+			font-size: 12px;
+		}
+		input[name="button8"]{
+			border: none;
+			padding: 16px 25px 10px 25px;
+			background-color: red;
+			color: white;
+			font-size: 16px;
+		}
+		input[name="button9"]{
+			border: none;
+			padding: 20px 30px 10px 30px;
+			background-color: lightgrey;
+			color: black;
+			font-size: 20px;
+		}
+		input[name="button10"]{
+			border: none;
+			padding: 24px 30px 10px 30px;
+			background-color: black;
+			color: white;
+			font-size: 24px;
+		}
+		.button_sizes_again{
+			margin-top: 70px;
+		}
+		input[name="button11"]{
+			border: none;
+			padding: 10px 24px 10px 24px;
+			background-color: #00cc00;
+			color: white;
+		}
+		input[name="button12"]{
+			border: none;
+			padding: 12px 28px 12px 28px;
+			background-color: blue;
+			color: white;
+		}
+		input[name="button13"]{
+			border: none;
+			padding: 14px 40px 14px 40px;
+			background-color: red;
+			color: white;
+		}
+		input[name="button14"]{
+			border: none;
+			padding: 32px 16px 32px 16px;
+			background-color: lightgrey;
+			color: black;
+		}
+		input[name="button15"]{
+			border: none;
+			padding: 16px 16px 16px 16px;
+			background-color: black;
+			color: white;
+		}
+		.Buttons{
+			padding: 20px;
+		}
+		input[name="button16"]{
+			border: none;
+			padding: 20px;
+			background-color: #00cc00;
+			color: white;
+			border-radius: 2px;
+		}
+		input[name="button17"]{
+			border: none;
+			padding: 20px;
+			background-color: blue;
+			color: white;
+			border-radius: 4px;
+		}
+		input[name="button18"]{
+			border: none;
+			padding: 20px;
+			background-color: red;
+			color: white;
+			border-radius: 8px;
+		}
+		input[name="button19"]{
+			border: none;
+			padding: 20px;
+			background-color: lightgrey;
+			color: black;
+			border-radius: 12px;
+		}
+		input[name="button20"]{
+			border: none;
+			padding: 20px;
+			background-color: black;
+			color: white;
+			border-radius: 50%;
+		}
+		.Colored_Button_Borders{
+			margin-top: 60px; 
+		}
+		input[name="button21"]{
+			background: white;
+			color: ;
+			padding: 10px 25px 10px 25px;
+			border: 2px solid  #00cc00;
+			border-radius: 3px; 	
+		}
+		input[name="button22"]{
+			background: white;
+			color: ;
+			padding: 10px 25px 10px 25px;
+			border: 2px solid blue; 
+			border-radius: 3px;	
+		}
+		input[name="button23"]{
+			background: white;
+			color: ;
+			padding: 10px 25px 10px 25px;
+			border: 2px solid red; 
+			border-radius: 3px;	
+		}
+		input[name="button24"]{
+			background: white;
+			color: ;
+			padding: 10px 25px 10px 25px;
+			border: 2px solid lightgrey;
+			border-radius: 3px; 	
+		}
+		input[name="button25"]{
+			background: white;
+			color: ;
+			padding: 10px 25px 10px 25px;
+			border: 2px solid black;
+			border-radius: 3px; 	
+		}
+		.hoverable{
+			margin-top: 60px;
+		}
+		input[name="button26"]{
+			background: #00cc00;
+			color: white;
+			padding: 10px 25px 10px 25px;
+			border-radius: 3px; 
+			border: none;	
+		}
+		input[name="button27"]{
+			background: blue;
+			color: white;
+			padding: 10px 25px 10px 25px;
+			border-radius: 3px; 
+			border: none;	
+		}
+		input[name="button28"]{
+			background: red;
+			color: white;
+			padding: 10px 25px 10px 25px;
+			border-radius: 3px; 
+			border: none;	
+		}
+		input[name="button29"]{
+			background: lightgrey;
+			color: black;
+			padding: 10px 25px 10px 25px;
+			border-radius: 3px; 
+			border: none;	
+		}
+		input[name="button30"]{
+			background: black;
+			color: white;
+			padding: 10px 25px 10px 25px;
+			border-radius: 3px; 
+			border: none;	
+		}
+		input[name="button31"]{
+			background: white;
+			color: ;
+			padding: 10px 25px 10px 25px;
+			border: 2px solid #00cc00;
+			border-radius: 3px; 	
+		}
+		input[name="button31"]:hover{
+			background: #00cc00;	
+		}
+		input[name="button32"]{
+			background: white;
+			color: ;
+			padding: 10px 25px 10px 25px;
+			border: 2px solid blue;
+			border-radius: 3px; 	
+		}
+		input[name="button32"]:hover{
+			background: blue;	
+		}
+		input[name="button33"]{
+			background: white;
+			color: ;
+			padding: 10px 25px 10px 25px;
+			border: 2px solid red;
+			border-radius: 3px; 	
+		}
+		input[name="button33"]:hover{
+			background: red;	
+		}
+		input[name="button34"]{
+			background: white;
+			color: ;
+			padding: 10px 25px 10px 25px;
+			border: 2px solid lightgrey;
+			border-radius: 3px; 	
+		}
+		input[name="button34"]:hover{
+			background: lightgrey;	
+		}
+		input[name="button35"]{
+			background: white;
+			color: ;
+			padding: 10px 25px 10px 25px;
+			border: 2px solid black;
+			border-radius: 3px; 	
+		}
+		input[name="button35"]:hover{
+			background: black;	
+		}
+		.Shadow{
+			margin-top: 60px;
+		}
+		input[name="button36"]{
+			background: #00cc00;
+			color: white;
+			padding: 10px 25px 10px 25px;	
+			border: none;
+			box-shadow: 0 5px 5px rgba(0,0,0,.3);
+		}
+		input[name="button37"]{
+			background: #00cc00;
+			color: white;
+			padding: 10px 25px 10px 25px;	
+			border: none;
+		}
+		input[name="button37"]:hover{
+			box-shadow: 0 5px 5px rgba(0,0,0,.3);
+			transition: 0.5s;	
+		}
+		input[name="button38"]{
+			background: #00cc00;
+			color: white;
+			padding: 10px 25px 10px 25px;	
+			border: none;
+		}
+		button[name="button39"]{
+			background: #00cc00;
+			color: white;
+			opacity: 0.5;
+			padding: 10px 25px 10px 25px;	
+			border: none;
+		}
+		input[name="button40"]{
+			background: #00cc00;
+			color: white;
+			width: 250px;
+			padding: 10px 25px 10px 25px;	
+			border: none;
+		}
+		input[name="button41"]{
+			background: blue;
+			color: white;
+			width: 50%;
+			padding: 10px 25px 10px 25px;	
+			border: none;
+			margin-top: 30px;
+		}
+		input[name="button42"]{
+			background: red;
+			color: white;
+			width: 100%;
+			padding: 10px 25px 10px 25px;	
+			border: none;
+			margin-top: 30px;
+		}
+		.group{
+			padding: 20px;
+		}
+		button[name="button43"]{
+			background: #00cc00;
+			color: white;
+			padding: 10px 25px 10px 25px;
+			border: none;	
+			float: left
+		}
+		.Borderd_Button_Group{
+			margin-top: 60px;
+		}
+		button[name="button44"]{
+			background: #00cc00;
+			color: white;
+			padding: 10px 25px 10px 25px;	
+			border: 1px solid green;
+			float: left;
+		}
+		.Vertical{
+			margin-top: 90px;
+		}
+		button[name="button45"]{
+			background: #00cc00;
+			color: white;
+			padding: 10px 25px 10px 25px;	
+			border: 1px solid green;
+		}
+
+
+	</style>
+</head>
+<body>
+
+	<section>
+		<h1>Basic Button Styling </h1>
+		<input type="button" name="button" value="Default Button">
+		<input type="button" name="css_button" value="CSS Button"  
+		<hr>
+	</section>
+
+	<div class="colors">
+		<div class="button_colors">
+			<h1>Button Colors</h1>
+			<input type="button" name="button1" value="Green">
+			<input type="button" name="button2" value="Blue">
+			<input type="button" name="button3" value="Red">
+			<input type="button" name="button4" value="Grey">
+			<input type="button" name="button5" value="Black">
+		</div>
+
+		<div class="button_sizes">
+			<h1>Button Sizes</h1>
+			<input type="button" name="button6" value="10px">
+			<input type="button" name="button7" value="12px">
+			<input type="button" name="button8" value="16px">
+			<input type="button" name="button9" value="20px">
+			<input type="button" name="button10" value="24px">
+		</div>
+
+		<div class="button_sizes_again">
+			<input type="button" name="button11" value="10px 24px">
+			<input type="button" name="button12" value="12px 28px">
+			<input type="button" name="button13" value="14px 40px">
+			<input type="button" name="button14" value="16px 32px">
+			<input type="button" name="button15" value="16px">
+		</div>
+	</div>
+
+	<hr>
+
+	<div class="Buttons">
+		<h1>Rounded Button</h1>
+			<input type="button" name="button16" value="2px">
+			<input type="button" name="button17" value="4px">
+			<input type="button" name="button18" value="8px">
+			<input type="button" name="button19" value="12px">
+			<input type="button" name="button20" value="50%">
+
+		<div class="Colored_Button_Borders">
+			<h1> Colored Button Borders</h1>
+			<input type="button" name="button21" value="Green">
+			<input type="button" name="button22" value="Blue">
+			<input type="button" name="button23" value="Red">
+			<input type="button" name="button24" value="Grey">
+			<input type="button" name="button25" value="Black">
+		</div>
+	
+		<div class="hoverable">
+			<h1> Hoverable Buttons</h1>
+			<input type="button" name="button26" value="Green">
+			<input type="button" name="button27" value="Blue">
+			<input type="button" name="button28" value="Red">
+			<input type="button" name="button29" value="Grey">
+			<input type="button" name="button30" value="Black"> <br><br>
+
+			<input type="button" name="button31" value="Green">
+			<input type="button" name="button32" value="Blue">
+			<input type="button" name="button33" value="Red">
+			<input type="button" name="button34" value="Grey">
+			<input type="button" name="button35" value="Black">
+		</div>
+
+		<div class="Shadow">
+			<h1> Shadow Buttons </h1>
+			<input type="button" name="button36" value="Shadow Button">
+			<input type="button" name="button37" value="Shadow on hover">
+		</div>
+
+		<div class="disabled">
+			<h1> Disabled Buttons </h1>
+			<input type="button" name="button38" value="Normal Button">
+			<button disabled id="submit" name="button39"> Disabled Button </button>
+		</div>		
+
+	</div>
+
+	<hr>
+
+	<div class="width">
+		<h1>Button Width</h1>
+		<input type="button" name="button40" value="250px"> <br>
+		<input type="button" name="button41" value="50%"> <br>
+		<input type="button" name="button42" value="100%"> 
+	</div>
+
+	<hr>
+
+	<div class="group">
+		<h1>Button Group</h1>
+		<div><button type="button" name="button43">Button</button></div>
+		<div><button type="button" name="button43">Button</button></div>
+		<div><button type="button" name="button43">Button</button></div>
+		<div><button type="button" name="button43">Button</button></div> <br><br>	
+
+		<div class="Borderd_Button_Group">
+		<h1> Button Borderd Group</h1>
+		<div><button type="button" name="button44">Button</button></div>
+		<div><button type="button" name="button44">Button</button></div>
+		<div><button type="button" name="button44">Button</button></div>
+		<div><button type="button" name="button44">Button</button></div> <br>	
+		</div>
+
+		<div class="Vertical">
+		<h1>Vertical Button Group</h1>
+		<div><button type="button" name="button45">Button</button></div>
+		<div><button type="button" name="button45">Button</button></div>
+		<div><button type="button" name="button45">Button</button></div>
+		<div><button type="button" name="button45">Button</button></div>	
+		</div>
+
+	</div>
+
+</body>
+</html> 
