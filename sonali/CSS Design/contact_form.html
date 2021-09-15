@@ -31,7 +31,7 @@
 		.left_col a{
 			text-decoration: none;
 			color: white;
-			font-size: 20px;
+			font-size: 18px;
 			font-family: Arial; 
 			display: inline-block;
 			padding: 0px 10px 0px 10px;
@@ -42,7 +42,7 @@
 		.right_col a{
 			text-decoration: none;
 			color: white;
-			font-size: 20px;
+			font-size: 18px;
 			font-family: Arial; 
 			padding: 0px 10px 0px 10px;
 			display: inline-block;	
@@ -145,8 +145,49 @@
 		input[type=button]:hover{
 			background: green;
 		}
+		footer{
+			padding: 70px;
+			background: #292d2f;
+		}
+		.footer_row{
+			height: 100px;
+		}
+		.left_footer{
+			width: 50%;
+			float: left;
+		}
+		.right_footer{
+			width: 50%;
+			float: left;
+		}
+		.social_footer{
+			float: right;
+			color: white;
+			padding-left: 350px;
+		}
+
 
 		@media screen and (min-width: 320px) and (max-width: 480px){
+
+			.left_head{
+				width: 100%;
+				float: none;
+			}
+			.right_head{
+				width: 100%;
+				float: none
+			}
+
+			section.background{
+				background-size: cover;
+				width: 100%;
+				text-align: center;
+				height: 300px;
+			}
+			h1{
+				text-align: center;
+				float: none;
+			}
 			.left_text{
 				float: none;
 				width: 100%;
@@ -167,7 +208,26 @@
 			input[type=text],select,textarea{
 				margin: 0;
 			}
+			footer{
+				
+			}
+			.left_footer{
+				float: none;
+				width: 100%;
+				text-align: center;
+			}
+			.right_footer{
+				float: none;
+				width: 100%;
+			}
+			.social_footer{
+				float: left;
+				width: 100%;
+				text-align: center;
+				overflow: hidden;
+			}
 		}
+
 	</style>
 </head>
 <body>
@@ -260,6 +320,23 @@
 			</div>
 		</div>
 	</main>
+
+	<footer>
+		<div class="footer_row">
+			<div class="left_footer">
+				<img src="https://www.tops-int.com/wp-content/uploads/2019/03/logo.png">
+			</div>
+
+			<div class="right_footer">
+				<div class="social_footer">
+					<p style="text-align: right; font-size: 18px; padding: 10px;">
+					 <i class="fa fa-phone" aria-hidden="true"></i>+91 - 7622011173 </p>
+					<p style="text-align: right; font-size: 18px; padding: 10px;"> 
+					<i class="fa fa-envelope" aria-hidden="true"></i>inquiry@tops-int.com </p>
+				</div>
+			</div>
+		</div>
+	</footer>
 
 </body>
 </html>
