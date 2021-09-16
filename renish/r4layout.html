@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+	<style type="text/css">
+
+		* {
+			padding: 0;
+			margin: 0;
+			box-sizing: border-box;
+		}
+
+		header {
+			text-align: center;
+			border: 2px solid red;
+			padding: 10px;
+			margin: 5px;
+		}
+
+		aside {
+			text-align: center;
+			border: 2px solid red;
+			float: left;
+			width:21%;
+			height: 200px;
+			padding: 10px;
+			margin: 3px;
+
+		}
+
+		main {
+			text-align: center;
+			border: 2px solid red;
+			float: left;
+			width: 55%;
+			height: 200px;
+			padding: 10px;
+			margin: 3px;
+		}
+
+		footer {
+			text-align: center;
+			border: 2px solid red;
+			padding: 10px;
+			margin: 3px;
+		}
+
+		section::after {
+			content: "";
+			display: table;
+			clear: both;
+		}
+
+	</style>
+</head>
+<body>
+	<header>
+		<h2>WEBSITE NAME</h2>
+	</header>
+
+	<section>
+		<aside class="menu">
+			<h3>MENU</h3>
+		</aside>	
+
+		<main class="CONTENT">
+			<h3>CONTENT AREA</h3>
+		</main>
+
+		<aside class="ADVT">
+			<h3>ADVT</h3>	
+		</aside>
+	</section>
+
+	<footer>
+		<h3>FOOTER</h3>
+	</footer>
+</body>
+</html>
