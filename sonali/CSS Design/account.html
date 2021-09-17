@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Account LogIn</title>
+	<style type="text/css">
+		
+		*{
+			padding: 0;
+			margin: 0;
+			box-sizing: border-box;
+		}
+		body{
+			background-color: #00e6e6;
+		}
+		form{
+			width: 75%;
+			background-color: white;
+			height: 90vh;
+			margin-top: 2.5%;
+			margin-left: 10%;
+		}
+		.section_left{
+			width: 95%;
+			padding: 60px 30px 60px 30px;
+			float: left;
+		}
+		.right_line{
+			float: right;
+			width: 5%;
+			height: 90vh;
+			background-color: #005ce6; 	
+		}
+		h2{
+			padding: 35px 50px 60px 50px;
+			font-family: Arial;
+			color: #005ce6;
+			font-size: 30px;
+		}
+		.form{
+			padding: 0px 50px 50px 50px;	
+		}
+		label{
+			letter-spacing: 2px;
+			color: grey;
+			font-family: Arial;
+		}
+		input[type=text]{
+			width: 100%;
+			background-color: lightgrey;
+			border: none;
+			padding: 20px;
+			border-radius: 3px;
+			margin: 10px 0px 25px 0px;
+		}
+		input[type=password]{
+			width: 100%;
+			background-color: lightgrey;
+			border: none;
+			padding: 20px;
+			border-radius: 3px;
+			margin: 10px 0px 25px 0px;
+		}
+		.row{
+			width: 100%;
+			padding: 20px 0px 30px 0px;
+		}
+		.left{
+			width: 50%;
+			float: left;
+			font-family: Arial;
+			color: grey;
+		}
+		.right{
+			width: 50%;
+			float: right;
+			padding-left: 300px;
+			font-family: Arial;
+			color: #005ce6;
+		}	
+		button{
+			width: 100%;
+			border: none;
+			background-color:  #005ce6;
+			font-family: Arial;
+			font-size: 17px;
+			color: white;
+			padding: 15px;
+			margin-top: 50px;
+			border-radius: 5px;	
+		}
+		.section_right{
+			width: 5%;
+			background-color: #005ce6;
+			float: right;	
+		}
+		.line_one{
+			width: 2px;
+			height: 10vh;
+			padding: 10px;
+			color: #f2f2f2;
+		}
+
+
+	</style>
+</head>
+<body>
+		<form>
+			<div class="section_left">
+
+				<h2> ACCOUNT LOGIN </h2>
+				<div class="form">
+					
+					<div class="label"> <label> USERNAME </label> </div>
+					<div> <input type="text" name=""> </div>
+
+					<div class="label"> <label> PASSWORD </label> </div>
+					<div> <input type="password" name=""> </div>
+
+					<div class="row">
+						<div class="left">
+							<input type="checkbox" name=""> Remember Me 
+						</div>
+						<div class="right">
+							Forgot Password ?
+						</div>
+					</div>	
+
+					<button> LOG IN </button>
+				</div>
+			</div>
+
+			<div class="section_right">
+				<div class="right_line">
+						<div class="line-one"> </div>
+						<div class="line-two"> </div>
+				</div>
+			</div>
+
+		</form>
+
+</body>
+</html>
