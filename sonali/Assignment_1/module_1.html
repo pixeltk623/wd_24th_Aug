@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title> Module 1 </title>
+	<style type="text/css">
+		
+		*{
+			padding: 0;
+			margin: 0;
+			box-sizing: border-box;
+		}
+		header{
+			width: 100%;
+			background: linear-gradient(to top, rgb(0, 89, 179,0.8), transparent);
+		}
+		h2{
+			color: #cc0000;
+			font-family: Arial;
+			padding: 15px;
+			text-align: center;
+		}
+		.user{
+			background: #b3d9ff;
+			padding: 50px 0px 10px 10px;
+		}
+		h3{
+			color: #cc0000;
+			font-family: Arial;
+		}
+		.user_box{
+			text-align: center;
+			height:  15vh;
+		}
+		label{
+			font-size: 20px;
+			font-family: Arial;
+			color: #004d99;
+			font-weight: bold;
+			margin: 10px;
+		}
+		input{
+			border-color: #004d99;
+			padding: 3px;
+		}
+		input[name=login]{
+			margin-bottom: 10px;
+			margin-left: 110px;
+		}
+		input[name=pwd]{
+			margin-left: 95px;
+			margin-bottom: 10px;
+		}
+		input[name=pass]{
+			margin-left: 15px;
+			margin-bottom: 10px;
+		}
+		.personal{
+			width: 100%;
+			height: 30vh;
+			background: #b3d9ff;
+			padding: 20px 0px 50px 10px;
+		}
+		.left_personal{
+			/*padding: 15px;*/
+			width: 50%;
+			float: left;
+			padding: 20px 0px 10px 30px;
+		}
+		.right_personal{
+			width: 50%;
+			float: left;
+			padding: 20px 0px 10px 30px;
+		}
+		.label{
+			padding-left:50px;
+		}
+		select[name=salutation]{
+			margin-bottom: 10px;
+			margin-left: 60px;
+			padding: 5px 20px 5px 0px;
+			color: darkblue;
+			font-weight: bold;
+			font-size: 15px;
+		}
+		select[name=country]{
+			margin-bottom: 10px;
+			margin-left: 78px;
+			padding: 5px 20px 5px 0px;
+			color: darkblue;
+			font-weight: bold;
+			font-size: 15px;
+		}
+		select[name=Status]{
+			margin-bottom: 10px;
+			margin-left: 5px;
+			padding: 5px 20px 5px 0px;
+			color: darkblue;
+			font-weight: bold;
+			font-size: 15px;
+		}
+		input[name=middle]{
+			margin-bottom: 10px;
+			margin-left: 40px;
+			padding: 3px;
+		}
+		input[name=e_id]{
+			margin-bottom: 10px;
+			margin-left: 80px;
+			padding: 3px;
+		}
+		input[name=first]{
+			margin-bottom: 10px;
+			margin-left: 50px;
+			padding: 3px;
+		}
+		input[name=last]{
+			margin-bottom: 10px;
+			margin-left: 52px;
+			padding: 3px;
+		}
+		input[name=num]{
+			margin-bottom: 10px;
+			margin-left: 10px;
+			padding: 3px;
+		}
+		.account{
+			width: 100%;
+			height: 25vh;
+			background: #b3d9ff;
+			padding: 50px 0px 10px 10px;
+		}
+		.left_account{
+			padding: 25px 0px 10px 30px;
+			width: 50%;
+			float: left;
+		}
+		.right_account{
+			padding: 25px;
+			width: 50%;
+			float: left;
+		}
+		input[name=digit]{
+			margin-bottom: 10px;
+			margin-left: 30px;
+			padding: 3px;
+		}
+		input[name=nick]{
+			margin-bottom: 10px;
+			margin-left: 10px;
+			padding: 3px;
+		}
+		select[name=fund]{
+			margin-bottom: 10px;
+			margin-left: 92px;
+			padding: 5px 20px 5px 0px;
+			color: darkblue;
+			font-weight: bold;
+			font-size: 15px;
+		}
+		.declared{
+			width: 100%;
+			background: #b3d9ff;
+		}
+		.declaration{
+			padding: 10px;
+		}
+		p{
+			font-size: 20px;
+			font-weight: bold;
+			color: darkblue;
+			padding-top: 20px;
+		}
+		.buttons{
+			text-align: center;
+			background: #b3d9ff;
+			width: 100%;
+			padding: 25px;
+		}
+		input[name=submit]{
+			height: 30px;
+			width: 7%;
+			font-size: 17px;
+			font-weight: bold;
+			color: white;
+			background: #538cc6;
+		}
+		input[name=reset]{
+			height: 30px;
+			width: 7%;
+			font-size: 17px;
+			font-weight: bold;
+			color: white;
+			background: #538cc6;
+		}
+
+	</style>
+</head>
+<body>
+
+	<header>
+		<h2> Individual Registration </h2>
+	</header> <br><br>
+
+	<main>
+		<div class="section">
+			<div class="user">
+				<h3> User Perticuler </h3>
+				<div class="user_box">
+					<label> *Login Id </label>
+					<input type="text" name="login"><br>
+					<label> *Password </label>
+					<input type="password" name="pwd"><br>
+					<label> *Confirm Password </label>
+					<input type="password" name="pass">
+				</div>
+			</div>
+
+			<div class="personal">
+				<h3> Personal Perticuler </h3>
+				<div class="left_personal">
+					<label class="label"> *Salutation </label> 
+
+					<select name="salutation">
+						<option value="select"> Select </option>
+					</select> <br>
+
+					<label class="label"> Middle Name </label>
+					<input type="text" name="middle"> <br>
+
+					<label class="label"> *Resident Status </label>
+					<select name="Status">
+						<option value="select"> Select </option>
+					</select> <br>
+
+					<label class="label"> E-mail ID </label>
+					<input type="email" name="e_id">
+				</div>
+
+				<div class="right_personal">
+					<label class="label"> *First Name </label>
+					<input type="text" name="first"> <br>
+
+					<label class="label"> *Last Name </label>
+					<input type="text" name="last"> <br>
+
+					<label class="label"> *Country </label>
+					<select name="country">
+						<option value="select"> Select </option>
+					</select> <br>
+
+					<label class="label"> *Mobile Number </label>
+					<input type="number" name="num">
+				</div>
+			</div>
+
+			<div class="account">
+				<h3> Account Perticuler </h3>
+				<div class="left_account">
+
+					<label class="label"> *15 Digit Account No. </label>
+					<input type="text" name="digit"> <br>
+
+					<label class="label"> *Fund Transfer </label> 
+					<select name="fund">
+						<option value="select"> Select </option>
+					</select> <br>
+
+				</div>
+
+				<div class="right_account">
+					<label class="label"> *Nick Name </label>
+					<input type="text" name="nick"> <br>
+				</div>
+			</div>
+
+			<div class="declared">
+				<div class="declaration">
+					<h3> DECLARATION </h3>
+					<p> 1. ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+					tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+					quis nostrud exercitation ullamco laboris <br>
+					2. nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat <br> 3. non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+
+					ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+					tempor incididunt ut labore et dolore magna aliqua. <br> 4. Ut enim ad minim veniam,quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+					consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+					cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+					proident, sunt in culpa qui officia deserunt mollit anim id est laborum. </p>
+				</div>
+			</div>
+
+			<div class="buttons">
+				<input type="button" name="submit" value="submit"> 
+				<input type="button" name="reset" value="Reset"> 
+			</div>
+		</section>
+	</main>
+
+</body>
+</html>
