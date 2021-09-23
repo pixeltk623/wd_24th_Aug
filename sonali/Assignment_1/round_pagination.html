@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="C:\Users\Dell\Desktop\wd_24th_Aug\sonali\CSS Design\font-awesome-4.7.0\css\font-awesome.min.css">
+	<title> Round Pagination </title>
+	<style type="text/css">
+		
+		.pagination ul{
+			width: 41%;
+			list-style-type: none;
+			display: inline-block;
+			background: #9966ff;
+			border-radius: 300px;
+			margin: 5px;
+			margin-left: 0px;
+		}
+		.pagination ul li{
+			float: left;
+			background-color: white;
+			border-radius: 120%;
+			padding: 15px;
+			margin: 15px;
+		}
+		.pagination ul li a{
+			text-decoration: none;
+			padding: 10px;
+			font-size: 20px;
+			color: #9966ff;
+			font-family: Arial;
+		}
+		.fa-angle-left{
+			/*padding: 5px; */
+			font-size: 38px;
+			margin-left: 5px;
+		}
+		.fa-angle-right{
+			/*padding: 5px; */
+			font-size: 38px;
+			margin-left: 5px;
+		}
+		.disabled{
+			pointer-events: none;
+			opacity: 0.6;
+		}
+		.top{
+			margin-top: 6px;
+			margin-left: -35px;
+		}
+		.center{
+			margin-top: 15px;
+		}
+
+	</style>
+</head>
+<body>
+		<div class="pagination">
+			<ul>
+				<div class="top">
+					<li><a href=""><i class="fa fa-angle-left" aria-hidden="true"></i></a></li>
+				</div>
+				<div class="center">
+					<li class="disabled"><a href=""> 1 </a></li>
+					<li><a href=""> 2 </a></li>
+					<li><a href=""> 3 </a></li>
+					<li><a href=""> 4 </a></li>
+					<li><a href=""> 5 </a></li>
+				</div>
+				<div class="top">
+					<li><a href=""> <i class="fa fa-angle-right" aria-hidden="true"></i></a></li>
+				</div>
+			</ul>
+		</div>
+</body>
+</html>

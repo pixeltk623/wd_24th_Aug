@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title> Square Pagination </title>
+	<style type="text/css">
+		
+		*{
+			padding: 0;
+			margin: 0;
+			box-sizing: border-box;
+		}
+		body{
+			background: linear-gradient(to bottom right, #66ffff -13%, #9900cc 93%);
+			height: 100vh;
+			width: 100%;
+		}
+		.square ul{
+			background-color: white;
+			width: 63.5%;
+			height: 96px;
+			border-radius: 5px;
+			margin: 20% 18%;
+			position: fixed;
+		}
+		.square ul li{
+			list-style-type: none;
+			float: left;
+			background-color: white;
+			padding: 45px -10px;
+		}
+		.square ul li a{
+			text-decoration: none;
+			font-size: 20px;
+			font-family: Arial;
+			color: grey;
+			border: 1px solid silver;
+			border-radius: 5px;
+			padding: 15px 22px;
+		}
+		.fix{
+			background-color: black;
+			border-radius: 5px;
+		}
+		.center{
+			padding: 35px 3px;
+		}
+		.side{
+			padding: 35px 20px;
+		}
+
+
+	</style>
+</head>
+<body>
+
+	<div class="square">
+		<ul>
+			<li class="side"><a href=""> PREVIOUS </a></li>
+			<li class="center"><a href=""> 1 </a></li>
+			<li class="center"><a href=""> 2 </a></li>
+			<li class="center"><a href="" class="fix" style="color: white;"> 3 </a></li>
+			<li class="center"><a href=""> 4 </a></li>
+			<li class="center"><a href=""> 5 </a></li>
+			<li class="center"><a href=""> 6 </a></li>
+			<li class="center"><a href=""> 7 </a></li>
+			<li class="center"><a href=""> 8 </a></li>
+			<li class="center"><a href=""> 9 </a></li>
+			<li class="center"><a href=""> 10 </a></li>
+			<li class="side"><a href=""> NEXT </a></li>	
+		</ul>
+	</div>
+
+</body>
+</html>
