@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>CSS - Position</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" type="text/css" href="font-awesome/css/font-awesome.min.css">
+	<style type="text/css">
+		* {
+			box-sizing: border-box;
+			padding: 0;
+			margin: 0;
+		}
+
+		body {
+			background-image: linear-gradient(to bottom right, #000099 8%, #ff0066 100%);
+			background-size: cover;
+			height: 100vh;
+			background-repeat: no-repeat;
+
+		}
+
+		.main {
+			width: 80%;
+			height: 450px;
+			background-color: skyblue;
+		}
+
+		.main {
+			position: absolute;
+			left: 150px;
+			top: 100px;
+		}
+
+		.form {
+			height: 300px;
+		    width: 500px;
+		    background-color: white;
+		}
+
+		.form {
+			position: absolute;
+		    left: 270px;
+		    top: 65px;
+		}
+	</style>
+</head>
+<body>
+	<div class="main">
+		<div class="form">
+			<div class="form-container">
+				<div>
+				<h4>Login To Your Account</h4>
+				</div>
+				<form>
+
+					<div>
+						<input type="text" name="" placeholder="Username">
+					</div>
+					<div>
+						<input type="text" name="" placeholder="Password">
+					</div>
+					<div>
+						<button>Login</button>
+					</div>
+				</form>
+			</div>
+			
+		</div>
+	</div>
+</body>
+</html>

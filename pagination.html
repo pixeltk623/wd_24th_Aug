@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<link rel="stylesheet" type="text/css" href="font-awesome/css/font-awesome.min.css">
+	<style type="text/css">
+		/* font-size: 20px;*/
+		   /* background-color: #03a9f4;*/
+		    /* padding: 2px; */
+
+		.pagination a {
+		    text-decoration: none;
+		    color: black;
+		    display: inline-block;
+		    padding: 17px 28px;
+		    margin: -3px;
+		}
+
+		.pagination a:hover {
+			background-color: red;
+			color: white;
+		}
+
+		.pagination a.active {
+			background-color: red;
+			color: white;
+		}
+
+		/*.pagination1 {
+			border: 1px solid black;
+			width: 108px;
+		}*/
+		.pagination1 a {
+			padding: 15px 25px;
+    		display: inline-block;
+    		border: 1px solid lightgrey;
+    		margin: -2px;
+    		text-decoration: none;
+    		color: black;
+    		font-size: 20px;
+		}
+		a.left {
+			border-right: none;
+		}
+		.pagination1 a:hover {
+			background-color: red;
+			color: white;
+			border: none;
+		}
+		 ul.pagination2 {
+			list-style-type: none;
+			overflow: hidden;
+		}
+		ul.pagination2 li {
+			float: left;
+			display: inline-block;
+    		padding: 13px;
+    		border: 1px solid lightgrey;
+    		border-right: none;
+		}
+		ul.pagination2 li a {
+			text-decoration: none;
+			color: #007bff;
+			font-size: 20px;
+		}
+		ul.pagination2 li:last-child {
+ 			border: 1px solid lightgrey;
+		}
+		a.disabled {
+    		pointer-events:none; //This makes it not clickable
+    		opacity:0.1;         //This grays it out to look disabled
+    		color: black;
+		}
+	</style>
+</head>
+<body>
+
+	<br>
+	<br>
+	<br>
+	<br>
+	<div class="pagination">
+		<a href="">&laquo;</a>
+		<a class="active" href="">1</a>
+		<a href="">2</a>
+		<a href="">3</a>
+		<a href="">4</a>
+		<a href="">5</a>
+		<a href="">6</a>
+		<a href="">&raquo;</a>
+	</div>
+
+	<br><br>
+	<div class="pagination1">
+		<a class="left" href="javascript:void(0)"><i class="fa fa-angle-left" aria-hidden="true"></i></a>
+		<a href="javascript:void(0)"><i class="fa fa-angle-right" aria-hidden="true"></i></a>
+	</div>
+
+	<br><br>
+
+	 <ul class="pagination2">
+	    <li class="page-item" ><a class="page-link disabled" href="#" style="color: grey;">Previous</a></li>
+	    <li class="page-item"><a class="page-link" href="#">1</a></li>
+	    <li class="page-item"><a class="page-link" href="#">2</a></li>
+	    <li class="page-item"><a class="page-link" href="#">3</a></li>
+	    <li class="page-item"><a class="page-link" href="#">Next</a></li>
+  	</ul>
+</body>
+</html>
