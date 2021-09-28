@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<style type="text/css">
+		/*.box {
+			width: 100px;
+			height: 100px;
+			background-color: green;
+			transition: width 5s, height 10s , transform 2s, font-size 2s;
+		}
+
+		div.box:hover {
+			background-color: red;
+			height:  200px;
+			width: 200px;
+			font-size: 90px;
+			transform: rotate(180deg);
+		}*/
+
+	/*	div {
+			transition-property: width;
+			transition-duration: 2s;
+			transition-timing-function: linear;
+			transition-delay: 1s;
+		}*/
+
+		div {
+			width: 50px;
+			height: 50px;
+			background-color: blue;
+			/*transition: width 5s*/
+			transition-property: width;
+			transition-duration: 5s;
+			transition-timing-function: linear;
+			transition-delay: 5s;
+
+
+		}
+
+		/*#div1 {
+			transition-timing-function: linear;
+		}
+
+		#div2 {
+			transition-timing-function: ease;
+		}
+
+		#div3 {
+			transition-timing-function: ease-in;
+		}
+
+		#div4 {
+			transition-timing-function: ease-out;
+		}
+
+		#div5 {
+			transition-timing-function: ease-in-out;
+		}
+*/
+		div:hover {
+			width: 500px;
+		}
+	</style>
+</head>
+<body>
+	
+	<!-- <div class="box">
+		Text
+	</div> -->
+
+	<div id="div1"></div>
+	<br>
+	<div id="div2"></div>
+	<br>
+	<div id="div3"></div>
+	<br>
+	<div id="div4"></div>
+	<br>
+	<div id="div5"></div>
+
+</body>
+</html>

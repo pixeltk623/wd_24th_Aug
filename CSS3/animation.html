@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<style type="text/css">
+		div.main {
+			width: 800px;
+			height: 500px;
+			border: 1px solid black;
+			margin: auto;
+			position: relative;
+		}
+		#box {
+			width: 100px;
+			height: 100px;
+			background-color: red;
+			position: absolute;
+			animation-name: boxing;
+			/*animation-duration: 5s;
+			animation-iteration-count: infinite;
+			animation-direction: alternate;
+			animation-timing-function: linear;*/
+		/*	animation: 3s ease-in 2 reverse both boxing;*/
+
+
+			/*animation-delay: 5s;*/
+
+		}
+
+		#second-box {
+			width: 100px;
+			height: 100px;
+			background-color: blue;
+			position: absolute;
+			top: 150px;
+			animation-name: text;
+			animation-duration: 5s;
+			animation-fill-mode: both;
+		}
+
+		@keyframes text {
+			from {
+				background-color: green;
+				top: 150px;
+				left: 0px;
+			}
+
+			to {
+				background-color: green;
+				top: 150px;
+				left: 700px;
+			}
+		}
+
+		@keyframes boxing {
+			0% {
+				background-color: green;
+				top: 0px;
+				left: 0px;
+			}
+
+			25% {
+				background-color: blue;
+				top: 0px;
+				left: 700px;
+			}
+
+			50% {
+				background-color: yellow;
+				top: 400px;
+				left: 700px;
+
+			}
+
+			75% {
+				background-color: pink;
+				left: 0px;
+				top: 400px;
+			}
+
+
+			100% {
+				background-color: orange;
+				left: 0px;
+				top: 0px;
+			}
+		}
+	</style>
+</head>
+<body>
+
+	<div class="main">
+		<div id="box"></div>
+		<div id="second-box"></div>
+	</div>
+</body>
+</html>
