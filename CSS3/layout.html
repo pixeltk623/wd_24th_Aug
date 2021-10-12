@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<style type="text/css">
+		* {
+			padding: 0px;
+			margin: 0px;
+			box-sizing: border-box;
+			font-family: Arial;
+		}
+		#top-header {
+			background-color: yellow;
+			padding: 20px 0px;
+		}
+		#top-header h4{
+			text-align: center;
+		}
+		header {
+			text-align: center;
+			background-color: #1abc9c;
+			color: white;
+			padding: 60px;
+		}
+
+		header h1 {
+			padding: 20px;
+		}
+		nav ul {
+			list-style-type: none;
+			background-color: #333;
+			/*overflow: hidden;*/
+			display: flex;
+			padding: 0;
+			margin: 0;
+		}
+
+		nav ul li a {
+			text-decoration: none;
+			color: white;
+			display: flex;
+			padding: 15px 20px;
+		}
+
+		nav ul li a:hover {
+			background-color: grey;
+		}
+
+		.row {
+			display: flex;
+		}
+
+		.row .left {
+			width: 30%;
+			background-color: #f1f1f1;
+			padding: 15px;
+		}
+
+		.row .main {
+			width: 70%;
+		}
+
+		.image-left img {
+			width: 100%;
+			/*height: 450px;*/
+		}
+
+		.image-left-banner img {
+			width: 100%;
+			margin-bottom: 10px;
+			height: 100px;
+		}
+		.left h2,h4,p {
+			padding: 5px;
+			margin-bottom: 15px;
+		}
+
+		.right-image {
+			width: 100%;
+			height: 200px;
+			background-color: #aaa;
+		}
+
+		.main {
+			padding: 25px;
+		}
+
+		.main h2, h5,p {
+			padding: 10px 0px 10px 0px;
+		}
+		.right-image {
+			padding: 10px;
+		}
+		footer {
+			text-align: center;
+			padding: 40px;
+			background-color: lightgrey;
+		}
+
+		@media screen and (max-width: 700px) { 
+			.row , nav ul{
+				display: flex;
+				flex-direction: column;
+			}
+
+			nav ul {
+				align-items: center;
+			}
+
+			ul li {
+				justify-content: center
+			}
+
+			.row .left {
+				width: 100%;
+			}
+
+			.row .main {
+				width: 100%;
+			}
+		
+		}
+	</style>
+</head>
+<body>
+
+	<div id="top-header">
+	 <h4><marquee behavior="scroll" scrollamount="12">Resize the browser window to see the responsive effect.</marquee></h4>
+	</div>
+	<header>
+		<h1>My Website</h1>
+		<p>With a <strong>flexible</strong> layout.</p>
+	</header>
+	<nav>
+		<ul>
+			<li><a href="">Link</a></li>
+			<li><a href="">Link</a></li>
+			<li><a href="">Link</a></li>
+			<li><a href="">Link</a></li>
+		</ul>
+	</nav>
+
+	<div class="row">
+		<div class="left">
+			<h2>About Me</h2>
+			<h4>Photo of me:</h4>
+			<div class="image-left">
+				<img src="images/iphone.png">
+			</div>
+			<p>Some text about me in culpa qui officia deserunt mollit anim..</p>
+
+			<h4>More Text</h4>
+			<p>Lorem ipsum dolor sit ame.</p>
+			<div class="image-left-banner">
+				<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRIifPmD5WPxA_yu5Ejiee_0laU3QmGBM_nVtKyQ-Bv05yNn3AgPAVfIqw8_cHfPmRT7g&usqp=CAU">
+			</div>
+			<div class="image-left-banner">
+				<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQW52-VvFHhOu60JgNCRGSQZzWC26jt8P8t1Mrdd3fBVV-Kywx1SzsNafZb-ZWV4pvwGQ&usqp=CAU">
+			</div>
+			<div class="image-left-banner">
+				<img src="https://www.salt-design.com.au/wp-content/uploads/2019/12/SALT_Christmas_2020_Header.jpg">
+			</div>
+		</div>
+
+		<div class="main">
+			<div class="card">
+				<h2>TITLE HEADING</h2>
+				<h5>Title description, Dec 7, 2017</h5>
+				<div class="right-image">
+					Image
+				</div>
+				<p>Some text..</p>
+				<p>Sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>
+			</div>
+			<div class="card">
+				<h2>TITLE HEADING</h2>
+				<h5>Title description, Dec 7, 2017</h5>
+				<div class="right-image">
+					Image
+				</div>
+				<p>Some text..</p>
+				<p>Sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>
+			</div>
+			<div class="card">
+				<h2>TITLE HEADING</h2>
+				<h5>Title description, Dec 7, 2017</h5>
+				<div class="right-image">
+					Image
+				</div>
+				<p>Some text..</p>
+				<p>Sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>
+			</div>
+			<div class="card">
+				<h2>TITLE HEADING</h2>
+				<h5>Title description, Dec 7, 2017</h5>
+				<div class="right-image">
+					Image
+				</div>
+				<p>Some text..</p>
+				<p>Sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>
+			</div>
+			
+		</div>
+	</div>
+
+	<footer>
+		<h2>Footer</h2>
+	</footer>
+</body>
+</html>
