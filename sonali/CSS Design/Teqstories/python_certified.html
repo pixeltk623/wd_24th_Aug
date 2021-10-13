@@ -283,18 +283,8 @@
 	}								
 
 									/*---- Keys and Tools ----*/
-	.points{
-		box-sizing: border-box;
-		padding: 40px 0px;
-		overflow: hidden;
-	}
-	.heighlights{
-		width: 64%;
-		display: inline-block;
-	}
-	.key_head{
-		width: 64%;
-		display: inline-block;
+	.container{
+		margin: 50px 0px;
 	}
 	h2{
 		font-family: Arial;
@@ -306,15 +296,15 @@
 		background-color: #e6e6e6;
 		margin: 10px 0px;
 	}
-	/*.key_row{
+	.key_row{
 		width: 100%;
-	}*/
+	}
 	.left_key{
-		width: 32%;
+		width: 50%;
 		float: left;
 	}
 	.right_key{
-		width: 32%;
+		width: 50%;
 		float: left;
 	}
 	.fa-star{
@@ -331,28 +321,34 @@
 	.li{
 		font-size: 12px;
 	}
-	.tools{
-		float: left;
-		width: 36%;
-	}
 	img{
-		height: 45px;
-		width: 25%;
+		height: 55px;
+		width: 30%;
 		margin: 0;
 		padding: 0;
 	}
-	.tools{
-		width: 36%;
-		float: left;
-	}
 	.tools_border{
-		width: 20%;
+		width: 30%;
 		background-color: #e6e6e6;
 		border:	2px solid #e6e6e6;
 		border-radius: 10px;
 		margin: 10px 0px 30px 0px;
 	}
+	.col-left{
+		width: 64%;
+		float: left;
+	}
+	.col-right{
+		width: 36%;
+		float: left;
+	}
+	.row::after{
+		content: "";
+		display: table;
+		clear: both;
+	}
 
+<<<<<<< Updated upstream
 tuition classes in vadodara
 tuition classes in vadodara for class 10
 best tuition classes in vadodara
@@ -366,8 +362,234 @@ tuition classes in baroda
 cbse tuition classes in vadodara
 tuition fees in vadodara
 private tuition classes in vadodara
+=======
+								/*	----- Course Detail -----*/
+	.course-head{
+		margin-top: 70px;
+	}
+	.course-border{
+		width: 10%;
+		height: 1px;
+		border: 2px solid #e6e6e6;
+		border-radius: 10px;
+		background-color: #e6e6e6;
+		margin: 3px 0px;
+	}
+	.course-line{
+		margin: 10px 0px;
+		font-size: 15px;
+		font-family: Arial;
+		color: #595959;
+	}
+	.course-main{
+		width: 100%;
+		margin-top: 30px;
+	}
+	.course-left{
+		width: 40%;
+		float: left;
+		padding: 0px 20px;
+	}
+	.path{
+		font-size: 16px;
+		font-family: Arial;
+		color: #404040;
+		font-weight: bold;
+		margin: 0px 0px 20px 0px;
+		box-sizing: border-box;
+	}
+	.curriculum{
+		font-size: 16px;
+		font-family: Arial;
+		color: #404040;
+		font-weight: bold;
+	}
+	.course-right{
+		width: 60%;
+		float: left;
+	}
+	.path-info{
+		width: 100%;
+		border: 1px solid silver;
+		border-radius: 3px;
+	}
+	/*.info-part{
+		height: 130px;
+	}*/
+	.h3{
+		font-family: Arial;
+		font-size: 19px;
+		font-weight: bold;
+		color: white;
+		background-color: #0099e6;
+		padding: 17px;
+		width: 100.2%;
+	}
+	.inner-path{
+		width: 60%;
+		float: left;
+	}
+	.path-batch{
+		float: left;
+		display: inline-block;
+		margin: 18px 30px;
+	}
+	.path-syllabus{
+		width: 40%;
+		float: left;
+	}
+	.syllabus-batch{
+		padding: 10px 20px;
+	}
+	input[name=syllabus]{
+		width: 38%;
+		height: 35px;
+		padding: 10px 10px;
+		font-size: 13px;
+		font-family: Arial;
+		font-weight: bold;
+		color: white;
+		border-radius: 3px;
+		background: #e60000;
+		cursor: pointer;
+	}
+	.python-info{
+		color: #cc6600;
+		font-family: Arial;
+		font-size: 25px;
+		font-weight: bold;
+	}
+	.python-info2{
+		color: #b3b3b3;
+		font-family: Arial;
+		font-size: 12px;
+	}
+	.python-info3{
+		color: #4d9900;
+		font-family: Arial;
+		font-size: 25px;
+		font-weight: bold;
+	}
+	.form-box{
+		margin-top: 60px;
+		border: 1px solid orange;
+		border-radius: 3px;
+		background-color: rgb(255, 235, 204,.5);
+	}
+	.form-info{
+		padding: 30px 30px 10px 30px;
+	}
+	h4{
+		font-size: 16px;
+		font-family: Arial;
+	}
+	.form-detail{
+		font-family: Arial;
+		font-size: 13px;
+		color: #b3b3b3;
+	}
+	.form-box .form-info form input{
+		width: 85%;
+		height: 40px;
+		border: 1px solid silver;
+		border-radius: 3px;
+	}
+	.form-box .form-info form input[name=SEND]{
+		margin-top: 20px;
+		padding: 0;
+		width: 25%;
+		height: 35px;
+		background: #53c68c;
+		color: white;
+		font-family: Arial;
+		border-radius: 3px;
+		font-weight: bold;
+		border: none;
+		box-shadow: 0 5px 5px rgb(83, 198, 140,0.5);
+	}
+	.cr-intro{
+			padding-top: 20px;
+	}
+	table{
+		width: 100%;
+		border-radius: 3px;
+		box-shadow: 0 5px 5px rgba(0,0,0,.2);
+		background-color: #f9fbff;
+		margin-bottom: 50px;
+	}
+	tr{
+		width: 100%;
+	}
+	td{
+		padding: 13px 20px;
+		border-bottom: 1px solid #e6e6e6;
+		font-size: 13px;
+		font-family: Roboto,Helvetica Neue,sans-serif;
+	}
+	.cr-intro table tr td i.fa-angle-down{
+		font-size: 20px;
+		color: #666666;
+	}
+	.cr_left{
+		width: 95%;
+	}
+	.cr_right{
+		width: 5%;
+		text-align: center;
+	}
+	tr:hover{
+		cursor: pointer;
+		background-color: rgb(179, 179, 179,0.2);
+	}
+							
+							/*----- INDUSTRIAL PROJECT -----*/
+>>>>>>> Stashed changes
 
+	.project{
+		padding-top: 70px;
+	}
+	.project-border{
+		margin-top: 10px;
+		width: 9.5%;
+		background: #e6e6e6;
+		border: 1.5px solid #e6e6e6;
+		border-radius: 10px;
+	}
+	.project-main{
+		margin-top: 40px;
+	}
+	.project-row{
+		display: inline-block;
+	}
+	.project-col{
+		float: left;
+		width: 31%;
+		height: 220px;
+		border: 1px solid silver;
+		border-radius: 4px;
+		text-align: center;
+		padding: 30px;
+		margin-left: 20px;
+		background-color: rgb(230, 242, 255,0.3);
+	}
+	.project-img{
+		width: 50%;
+		height: 60px;
+		margin-bottom: 20px;
+	}
+	.project-name{
+		color: #250033;
+		font-family: Arial;
+		font-size: 16px;
+		font-weight: bold;
+	}
+	.project-detail{
+		margin-top: 15px;
+		font-size: 13px;
+		color: grey; 
+	}
 
+<<<<<<< Updated upstream
 	.col-left {
 		width: 65%;
 		float: left;
@@ -382,6 +604,49 @@ private tuition classes in vadodara
 		content: "";
 		display: table;
 		clear: both;
+=======
+								/*----- FAQs -----*/
+	.ph-intro{
+			padding-top: 60px;
+	}
+	.faqs_border{
+		margin: 10px 0px 35px 0px;
+		width: 9%;
+		border: 1.7px solid #e6e6e6;
+		border-radius: 15px;
+		background-color: #e6e6e6;
+	}
+	table{
+		width: 100%;
+		border-radius: 3px;
+		box-shadow: 0 5px 5px rgba(0,0,0,.2);
+		background-color: #f9fbff;
+		margin-bottom: 50px;
+	}
+	tr{
+		width: 100%;
+	}
+	td{
+		padding: 13px 20px;
+		border-bottom: 1px solid #e6e6e6;
+		font-size: 13px;
+		font-family: Roboto,Helvetica Neue,sans-serif;
+	}
+	.ph-intro table tr td i.fa-angle-down{
+		font-size: 20px;
+		color: #666666;
+	}
+	.ph_left{
+		width: 95%;
+	}
+	.ph_right{
+		width: 5%;
+		text-align: center;
+	}
+	tr:hover{
+		cursor: pointer;
+		background-color: rgb(179, 179, 179,0.2);
+>>>>>>> Stashed changes
 	}
 
 
@@ -553,75 +818,244 @@ private tuition classes in vadodara
 			</div>
 		</div>
 	</div>
+	
 
-	<div class="points">
-		<div class="highlights">
-			<div class="key_head">
+	<div class="container">
+		<div class="row">
+			<div class="col-left">
 				<h2> Key Highlights </h2>
 				<p class="key_border"></p>
-			</div>
-			<div class="key_row">
-				<div class="left_key">
-					<div class="ul">
-						<li class="li">
-							<i class="fa fa-star" aria-hidden="true"></i>
-							Doubt Clearing Session
-						</li>
-						<li class="li">
-							<i class="fa fa-star" aria-hidden="true"></i>
-							Complete Practical Training
-						</li>
-						<li class="li">
-							<i class="fa fa-star" aria-hidden="true"></i>	
-							No Cost EMI
-						</li>
-						<li class="li">
-							<i class="fa fa-star" aria-hidden="true"></i>
-							Job Placement Assistance
-						</li>
+
+				<div class="key_row">
+					<div class="left_key">
+						<div class="ul">
+							<li class="li">
+								<i class="fa fa-star" aria-hidden="true"></i>
+								Doubt Clearing Session
+							</li>
+							<li class="li">
+								<i class="fa fa-star" aria-hidden="true"></i>
+								Complete Practical Training
+							</li>
+							<li class="li">
+								<i class="fa fa-star" aria-hidden="true"></i>	
+								No Cost EMI
+							</li>
+							<li class="li">
+								<i class="fa fa-star" aria-hidden="true"></i>
+								Job Placement Assistance
+							</li>
+						</div>
+					</div>
+
+					<div class="right_key">
+						<div class="ul">
+							<li class="li">
+								<i class="fa fa-star" aria-hidden="true"></i>
+								Dedicated Student Representative
+							</li>
+							<li class="li">
+								<i class="fa fa-star" aria-hidden="true"></i>
+								Experienced Trainers<
+							</li>
+							<li class="li">
+								<i class="fa fa-star" aria-hidden="true"></i>
+								Case Studies and Live Practical Project
+							</li>
+							<li class="li">
+								<i class="fa fa-star" aria-hidden="true"></i>
+								Designed for Professionals
+							</li>
+						</div>
 					</div>
 				</div>
-
-				<div class="right_key">
-					<div class="ul">
-						<li class="li">
-							<i class="fa fa-star" aria-hidden="true"></i>
-							Dedicated Student Representative
-						</li>
-						<li class="li">
-							<i class="fa fa-star" aria-hidden="true"></i>
-							Experienced Trainers<
-						</li>
-						<li class="li">
-							<i class="fa fa-star" aria-hidden="true"></i>
-							Case Studies and Live Practical Project
-						</li>
-						<li class="li">
-							<i class="fa fa-star" aria-hidden="true"></i>
-							Designed for Professionals
-						</li>
-					</div>
-				</div>
 			</div>
-		</div>
 
-		<div class="tools">
-			<div class="cover">
-				<h2>Tools Covered</h2>
+			<div class="col-right">
+				<h2> Tools Covered </h2>
 				<p class="tools_border"> </p>
-			</div>
 
-			<div class="logo_img">
-				<img src="https://drive.google.com/uc?export=view&id=12xm4b3alYPxlzLKczQYA72sS0tiOsVDd">
-				<img src="https://drive.google.com/uc?export=view&id=1nCYYgANkUYtHxEP861eV8aoitkPrQh5Z">
-				<img src="https://drive.google.com/uc?export=view&id=1CYsphABbL7KjD6TZDemYv5_N3pqhQnJ6"> <br>
-				<img src="https://drive.google.com/uc?export=view&id=1C6SAhyLF2_EsReRp9M6_v3kmOe9zQjq7">
-				<img src="https://drive.google.com/uc?export=view&id=1H72dAU6V-fyXsBkQNnceHLjOtaJXM-G3">
-				<img src="https://drive.google.com/uc?export=view&id=1bhNI4IMy9q03AYVrvfbo720tvbyEM8O1">
+				<div class="logo_img">
+					<img src="https://drive.google.com/uc?export=view&id=12xm4b3alYPxlzLKczQYA72sS0tiOsVDd">
+					<img src="https://drive.google.com/uc?export=view&id=1nCYYgANkUYtHxEP861eV8aoitkPrQh5Z">
+					<img src="https://drive.google.com/uc?export=view&id=1CYsphABbL7KjD6TZDemYv5_N3pqhQnJ6"> <br>
+					<img src="https://drive.google.com/uc?export=view&id=1C6SAhyLF2_EsReRp9M6_v3kmOe9zQjq7">
+					<img src="https://drive.google.com/uc?export=view&id=1H72dAU6V-fyXsBkQNnceHLjOtaJXM-G3">
+					<img src="https://drive.google.com/uc?export=view&id=1bhNI4IMy9q03AYVrvfbo720tvbyEM8O1">
+				</div>
 			</div>
 		</div>
 	</div>
 
+	<div class="Course-detail">
+		<div class="course-head">
+			<h2> Course Details </h2>
+			<p class="course-border"> </p>
+			<p class="course-line"> Learn from the best industry experts across the globe. </p>
+		</div>
+
+		<div class="course-main">
+			<div class="course-left">
+				<p class="path"> Path </p>
+				
+				<div class="path-info">
+					<div class="info-part">
+						<p class="h3"> Python Certification Training Course </p>
+						<div class="inner-path">
+							<div class="path-batch">
+								<p class="python-info"> 5 </p>
+								<p class="python-info2"> Batches </p>
+							</div>
+							<div class="path-batch">
+								<p class="python-info3" >32 </p>
+								<p class="python-info2"> Hours </p>
+							</div>
+						</div>
+
+						<div class="syllabus-batch">
+							<input type="button" name="syllabus" value="Download syllabus">
+						</div>
+					</div>
+				</div>
+
+				<div class="form-box">
+					<div class="form-info">
+						<h4> Get in touch with our expert technical advisor </h4>
+						<p class="form-detail">
+							Enroll in online/offline programs built with top industry standards, with dedicated mentorship and expert career guidance 
+						</p>
+
+						<form>
+							<input type="email" name="E-mail" placeholder="Email">
+							<input type="number" name="PHONE" placeholder="Phone">
+							<input type="button" name="SEND" value="Send">
+						</form>
+					</div>
+				</div>
+			</div>
+
+			<div class="course-right">
+				<p class="curriculum"> Detailed curriculum </p>
+
+				<div class="cr-intro">
+					<table>
+						<tr>
+							<td class="cr_left"> Introduction to Python </td>
+							<td class="cr_right"> <i class="fa fa-angle-down" aria-hidden="true">
+							</i></td>
+						</tr>
+						<tr>
+							<td class="cr_left">Variables in Python	</td>
+							<td class="cr_right"> <i class="fa fa-angle-down" aria-hidden="true">
+							</i></td>
+						</tr>
+						<tr>
+							<td class="cr_left"> Python Operators and Expressions </td>
+							<td class="cr_right"> <i class="fa fa-angle-down" aria-hidden="true">
+							</i></td>
+						</tr>
+						<tr>
+							<td class="cr_left"> Conditional Statements </td>
+							<td class="cr_right"> <i class="fa fa-angle-down" aria-hidden="true">
+							</i></td>
+						</tr>
+						<tr>
+							<td class="cr_left"> Loops </td>
+							<td class="cr_right"> <i class="fa fa-angle-down" aria-hidden="true">
+							</i></td>
+						</tr>
+						<tr>
+							<td class="cr_left"> Basic Python Data Structures </td>
+							<td class="cr_right"> <i class="fa fa-angle-down" aria-hidden="true">
+							</i></td>
+						</tr>
+						<tr>
+							<td class="cr_left"> Functions </td>
+							<td class="cr_right"> <i class="fa fa-angle-down" aria-hidden="true">
+							</i></td>
+						</tr>
+						<tr>
+							<td class="cr_left"> Object Oriented Programming (OOP) </td>
+							<td class="cr_right"> <i class="fa fa-angle-down" aria-hidden="true">
+							</i></td>
+						</tr>
+						<tr>
+							<td class="cr_left"> Built-in Packages </td>
+							<td class="cr_right"> <i class="fa fa-angle-down" aria-hidden="true">
+							</i></td>
+						</tr>
+						<tr>
+							<td class="cr_left">External Packages </td>
+							<td class="cr_right"> <i class="fa fa-angle-down" aria-hidden="true">
+							</i></td>
+						</tr>
+						<tr>
+							<td class="cr_left"> Working with Files </td>
+							<td class="cr_right"> <i class="fa fa-angle-down" aria-hidden="true">
+							</i></td>
+						</tr>
+						<tr>
+							<td class="cr_left"> Errors and Exception Handling </td>
+							<td class="cr_right"> <i class="fa fa-angle-down" aria-hidden="true">
+							</i></td>
+						</tr>
+						<tr>
+							<td class="cr_left"> Database Programming with Python </td>
+							<td class="cr_right"> <i class="fa fa-angle-down" aria-hidden="true">
+							</i></td>
+						</tr>
+						<tr>
+							<td class="cr_left"> Flask </td>
+							<td class="cr_right"> <i class="fa fa-angle-down" aria-hidden="true">
+							</i></td>
+						</tr>
+						<tr>
+							<td class="cr_left">Advanced Python: Django </td>
+							<td class="cr_right"> <i class="fa fa-angle-down" aria-hidden="true">
+							</i></td>
+						</tr>
+					</table>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="project">
+		<div class="project-title">
+			<h2> Industrial Projects </h2>	
+			<p class="project-border"></p>	
+		</div>
+
+		<div class="project-main">
+			<div class="project-row">
+				<div class="project-col">
+					<img class="project-img" src="https://drive.google.com/uc?export=view&id=1H72dAU6V-fyXsBkQNnceHLjOtaJXM-G3">
+					<p class="project-name"> Fashion Store Application </p>
+					<p class="project-detail"> 
+						Fashion store application for stock and price management or modification.
+					</p>
+				</div>
+
+				<div class="project-col">
+					<img class="project-img" src="https://drive.google.com/uc?export=view&id=1CYsphABbL7KjD6TZDemYv5_N3pqhQnJ6">
+					<p class="project-name"> Bookstore Ecommerce </p>
+					<p class="project-detail"> 
+						Designing and Developing a customer facing bookstore application for enquiring a...
+					</p>
+				</div>
+
+				<div class="project-col">
+					<img class="project-img" src="https://drive.google.com/uc?export=view&id=12xm4b3alYPxlzLKczQYA72sS0tiOsVDd">
+					<p class="project-name"> Car Shop Inventory </p>
+					<p class="project-detail"> 
+						Car modification shop application to accept keep track of and deliver orders.
+					</p>
+				</div>
+			</div>
+		</div>
+	</div>
+
+<<<<<<< Updated upstream
 	<section>
 		<div class="row">
 			<div class="col-left">
@@ -632,6 +1066,82 @@ private tuition classes in vadodara
 			</div>
 		</div>
 	</section>
+=======
+	<div class="ph-intro">
+		<div clasa="python-faqs">
+			<h2> FAQs </h2>
+			<p class="faqs_border"> </p>
+		</div>
+		<table>
+			<tr>
+				<td class="ph_left"> 
+					What are the required pre-requisites for undergoing the Python Certification Training course? 
+				</td>
+				<td class="ph_right"> <i class="fa fa-angle-down" aria-hidden="true">
+				</i></td>
+			</tr>
+			<tr>
+				<td class="ph_left"> What happens if I miss a class? </td>
+				<td class="ph_right"> <i class="fa fa-angle-down" aria-hidden="true">
+				</i></td>
+			</tr>
+			<tr>
+				<td class="ph_left"> What if my shift timings are variable? </td>
+				<td class="ph_right"> <i class="fa fa-angle-down" aria-hidden="true">
+				</i></td>
+			</tr>
+			<tr>
+				<td class="ph_left"> 
+					What if I still have a doubt after attending a session once? 
+				</td>
+				<td class="ph_right"> <i class="fa fa-angle-down" aria-hidden="true">
+				</i></td>
+			</tr>
+			<tr>
+				<td class="ph_left"> When will the LMS access be provided? </td>
+				<td class="ph_right"> <i class="fa fa-angle-down" aria-hidden="true">
+				</i></td>
+			</tr>
+			<tr>
+				<td class="ph_left"> Who are the instructors? </td>
+				<td class="ph_right"> <i class="fa fa-angle-down" aria-hidden="true">
+				</i></td>
+			</tr>
+			<tr>
+				<td class="ph_left"> Why is the online training mode preferred? </td>
+				<td class="ph_right"> <i class="fa fa-angle-down" aria-hidden="true">
+				</i></td>
+			</tr>
+			<tr>
+				<td class="ph_left"> How long does it take to complete this course? </td>
+				<td class="ph_right"> <i class="fa fa-angle-down" aria-hidden="true">
+				</i></td>
+			</tr>
+			<tr>
+				<td class="ph_left"> What are roles and responsibility of Python Developer? </td>
+				<td class="ph_right"> <i class="fa fa-angle-down" aria-hidden="true">
+				</i></td>
+			</tr>
+			<tr>
+				<td class="ph_left"> Is there any training end realtime project provided? </td>
+				<td class="cr_right"> <i class="fa fa-angle-down" aria-hidden="true">
+				</i></td>
+			</tr>
+			<tr>
+				<td class="ph_left"> What are the tools covered in this course? </td>
+				<td class="ph_right"> <i class="fa fa-angle-down" aria-hidden="true">
+				</i></td>
+			</tr>
+			<tr>
+				<td class="ph_left">
+					Do I need a laptop/desktop? If yes, what are the minimum system requirements? 
+				</td>
+				<td class="ph_right"> <i class="fa fa-angle-down" aria-hidden="true">
+				</i></td>
+			</tr>
+		</table>
+	</div>
+>>>>>>> Stashed changes
 
 </body>
 </html>

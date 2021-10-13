@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title> Transition </title>
+	<style type="text/css">
+		
+		*{
+			padding: 0;
+			margin: 0;
+		}
+		.box{
+			width: 150px;
+			height: 150px;
+			background: lightblue;
+			display: block;
+			margin: 50px 50px;
+			transition: transform 3s ,width 5s,height 10s,font-size 5s;
+		}
+		.box:hover{
+			width: 500px;
+			height: 500px;
+			font-size: 60px;
+			transform: rotate(360deg);
+		}
+
+	</style>
+</head>
+<body>
+
+	<div class="box">
+		<h2> Transition </h2>
+	</div>
+
+</body>
+</html>

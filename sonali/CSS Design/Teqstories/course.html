@@ -1,0 +1,551 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title> Populer Course </title>
+	<link rel="stylesheet" type="text/css" href="C:\Users\Dell\Desktop\wd_24th_Aug\sonali\CSS Design\font-awesome-4.7.0\css\font-awesome.min.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<style type="text/css">
+			
+		*{
+			padding: 0;
+			margin: 0;
+			box-sizing: border-box;
+		}
+
+							/*  ------  NAVIGATION BAR  ------- */
+
+		nav{
+			width: 100%;
+			background-color: white;
+		}
+		.nav_left{
+			width: 50%;
+			float: left;
+			padding: 30px;
+		}
+		.img1{
+			padding-left: 100px;
+		}
+		.allCource{
+			margin-bottom: 30px;
+		}
+		.nav_right{
+			width: 50%;
+			float: right;
+			padding: 30px;
+		}
+								/* ------  POPULER COURSE ------ */
+
+		section{
+			padding: 20px 140px 0px 200px;
+		}
+		h1{
+			font-size: 50px;
+			font-weight: 10px;
+			font-family: Roboto,Helvetica Neue,sans-serif;
+			color: #004080;
+			margin-top: 20px;
+		/*	margin-bottom: -10px; */
+		}
+		.p{
+			width: 50%;
+			float: left;
+			color: grey;
+			font-size: 18px;
+			font-family: Roboto,Helvetica Neue,sans-serif; 
+			margin-top: 10px;
+			margin-bottom: 30px;
+		}
+		.top_main{
+			width: 100%;
+			box-sizing: border-box;
+		}
+		.top_main::after{
+			content: "";
+			display: table;
+			clear: both;
+		}
+		.row{
+			display: inline-block;
+		}
+		.col{
+			float: left;
+			letter-spacing: 0.6px;
+			line-height: 20px;
+			width: 30%;
+			margin-right: 20px;
+			border: 1px solid #e6e6e6;
+			border-radius: 3px;
+			background-color: rgb(242, 242, 242,0.10); 
+			font-family: Roboto,Helvetica Neue,sans-serif;
+		}
+		.col:hover{
+			background-color: rgb(230, 230, 230,0.22);
+		}
+		.aws{
+			padding:  15px;
+			height: 275px;
+		}
+		.img{
+			width: 19%;
+			height: 26%;
+			padding-bottom: 10px;
+		}
+		h4{
+			font-family: Arial;
+			font-size: 14px;
+		}
+		p{
+			font-size: 14px;
+		}
+		.read1{
+			padding-right: 15px;
+			padding-top: 10px;
+			float: right;
+			font-size: 14px;
+			font-family: Arial;
+			color: #004080;
+			padding-bottom: 10px; 
+		}
+		/*.aws:hover{
+			background-image: url(https://www.teqstories.com/assets/images/pc/AWS.svg);
+			overflow: hidden;
+			width: 90%;
+			background-repeat: no-repeat;
+			transition: 0.5s;
+			cursor: pointer;
+			content: "";
+		}*/
+		/*.col{
+			float: left;
+		}*/
+		.infinte{
+			padding:  15px;
+			height: 275px;
+		}
+		.python{
+			padding:  15px;
+			height: 275px;
+		}
+		.bottom_main{
+			margin-top: 35px;
+		}
+		.java{
+			padding:  15px;
+			height: 260px;
+		}
+		.react{
+			padding:  15px;
+			height: 260px;
+		}
+		.angular{
+			padding:  15px;
+			height: 260px;
+		}
+									/*------ CLIENT ------ */
+
+		.client{
+				width: 100%;
+		}
+		.section_2{
+			background-color: #f9fbff;
+			padding: 30px 200px 30px 200px;
+		}
+		h2{
+			font-size: 45px;
+			font-family: Roboto,Helvetica Neue,sans-serif;
+			color: #004080;
+			margin-top: 20px;
+		}
+		.c{
+			font-size: 20px;
+			font-family: Roboto,Helvetica Neue,sans-serif;
+			color: grey;
+			padding: 7px;
+		}
+		.client_img{
+			width: 100%;
+			display: inline-block;
+		}
+		.i1{
+			height: 160px;
+			width: 15%;
+			background-color: white;
+			border-radius: 30px;
+			box-shadow: 0 5px 5px rgba(0,0,0,.1);
+			margin: 30px 0px 20px 15px;
+		}
+
+								/*-----  ADVANTAGE -----*/
+		.advantage{
+			width: 100%;
+			padding: 30px 200px;
+		}
+		.section_3{
+			width: 100%;
+		}
+		.advantage_main{
+			width: 100%;
+		}
+		.row2{
+			padding: 20px;
+			margin-right: -70px;
+		}
+		.col2{
+			display: inline-block;
+		}
+		.a_img{
+			height: 200px;
+			width: 100%;
+		}
+		.demo_img{
+			margin-right: 20px;
+			padding: 12px;
+			float: left;		
+			border: 1px solid #e6e6e6;
+			border-radius: 2px;
+			width: 31%;
+			height: 390px;
+			background-color: rgb(242, 242, 242,0.10);
+		}
+		.access_img{
+			margin-right: 20px;
+			padding: 12px;
+			border: 1px solid #e6e6e6;
+			border-radius: 2px;
+			float: left;
+			width: 31%;
+			background-color: rgb(242, 242, 242,0.10);
+		}
+		.support_img{
+			margin-right: 20px;
+			padding: 12px;	
+			border: 1px solid #e6e6e6;
+			border-radius: 2px;
+			float: left;
+			width: 31%;
+			background-color: rgb(242, 242, 242,0.10);
+		}
+		.pera{
+			padding: 15px 0px;
+			font-family: Arial;
+			font-size: 25px;
+			color: #666666;
+		}
+		hr{
+			border: 1px solid #e6e6e6;
+		}
+		.advantage_detail{
+			padding: 15px 0px 5px 0px;
+			font-family: Arial;
+			font-size: 17px;
+		}
+										/* ------ FAQs ----- */
+		.faq_main{
+			background-size: cover;
+		}
+		.section_4{
+			padding: 0px 200px 20px 200px;
+		}
+		.faq_head{
+			width: 100%;
+		}
+		.faq_que{
+			padding-top: 20px;
+		}
+		table{
+			width: 100%;
+			border-radius: 3px;
+			box-shadow: 0 5px 5px rgba(0,0,0,.2);
+			background-color: #f9fbff;
+		}
+		tr{
+			width: 100%;
+		}
+		td{
+			padding: 13px 20px;
+			border-bottom: 1px solid #e6e6e6;
+			font-size: 15.5px;
+			font-family: Roboto,Helvetica Neue,sans-serif;
+		}
+		.faq_que table tr td i.fa-angle-down{
+			font-size: 20px;
+			color: #666666;
+		}
+		.faq1_left{
+			width: 95%;
+		}
+		.faq1_right{
+			width: 5%;
+			text-align: center;
+		}
+
+
+		@media screen and (min-width: 320px) and (max-width: 880px){
+
+			.img{
+				width: 50px;
+				height: 52px;
+			}
+			.p{
+				width: 100%;
+				float: none;
+				font-size: 17px;
+			}
+			section{
+				padding: 0px 5px 5px 5px;
+			}
+			.col{
+				float: none;
+				width: 100%;
+				margin-top: 25px;
+				background-color: rgb(242, 242, 242,0.10); 
+			}
+			.bottom_main{
+				margin-top: 0px;
+			}
+			h2{
+				font-size: 25px;
+				margin-top: 10px;
+			}
+			.c{
+				padding: 7px;
+			}
+			.i1{
+				width: 100%;
+			}
+		}
+
+
+	</style>
+</head>
+<body>
+
+	<!-- <nav>
+		<div class="nav">
+			<div class="nav_left">
+				
+				<span>
+						<img src="https://www.teqstories.com/assets/images/Blue.png"class="img1">
+				</span>
+				<select name="all_cource" class="allCource">
+					<option value="All_Cource"> All Cource</option>
+				</select>
+				<a href=""> Enquiry </a>
+
+			</div>
+
+			<div class="nav_right">	
+				 <a href=""><i class="fa fa-phone" aria-hidden="true">+91-935-323-9317</i></a>
+			</div>
+		</div>	
+	</nav> -->
+
+							<!-- ------ POPULER COURSE ------ -->
+
+	<section>
+		<div class="section">
+			<h1>Populer Courses</h1>
+			<p class="p">Upskill yourself with the industry recognised course with 
+			one of the best leading industry mentors.</p>
+		</div>
+
+		<main>
+			<div class="top_main">
+				<div class="row">
+					<div class="col">
+						<div class="aws">
+							<img class="img"
+							src="https://www.teqstories.com/assets/images/pc/AWS.svg">
+							<h4>AWS Solutions Architect Certification Course</h4>
+							<p>AWS Certification course provided by Teqstories authorizes the cloud experts to assist the professionals feature the in-demand skills. The organizations build productive and creative teams for clo... <br>
+							<div class="read1"> <b> Read More </b></div></p>
+						</div>
+					</div>
+
+					<div class="col">
+						<div class="infinte">
+							<img class="img"
+							src="https://www.teqstories.com/assets/images/pc/Devops.svg">
+							<h4>DevOps Professional Certification Course</h4>
+							<p>DevOps Certification Training Course offered by Teqstories will help you to prepare for a career in DevOps. It is a fast-growing field that connects the gap between software developers and operation... <br>
+							<div class="read1"> <b> Read More </b></div></p>
+						</div>
+					</div>
+
+					<div class="col">
+						<div class="python">
+							<img class="img"
+							src="https://www.teqstories.com/assets/images/pc/data.svg">
+							<h4>Data Science With Python Certification Course</h4>
+							<p>Data Science serves the purpose to find patterns within data. The Data Science Certification is recommended for professionals and job seekers so as to make quicker and better decisions, that take ...<br>
+							<div class="read1"><b> Read More </b></div></p>
+						</div>
+					</div>
+
+				</div>
+			</div>
+
+			<div class="bottom_main">
+
+				<div class="row">
+					<div class="col">
+						<div class="java">
+							<img class="img"
+							src="https://www.teqstories.com/assets/images/pc/Java.svg">
+							<h4>Java Certification Course</h4>
+							<p>As a fresher if you are looking for opportunities in the IT market, Java Certification helps you widely to stand out from the crowd. Java certification helps you learn new concepts in the Java wor... <br>
+							<div class="read1"> <b> Read More </b></div></p>
+						</div>
+					</div>
+
+					<div class="col">
+						<div class="react">
+							<img class="img"
+							src="https://www.teqstories.com/assets/images/pc/react.svg">
+							<h4> React JS With Redux Certification Course </h4>
+							<p>The React JS Certification Course is for web developers, programmers who build awesome UI using React and Flux. ReactJS Certification helps the learner differentiate in today's competition, broaden ... <br>
+							<div class="read1"> <b> Read More </b></div></p>
+						</div>
+					</div>
+
+					<div class="col">
+						<div class="angular">
+							<img class="img" src="https://www.teqstories.com/assets/images/pc/Angular.svg">
+							<h4>Angular Certification Course</h4>
+							<p>Angular Certification training is quite important for Web Developers and Mobile Application Developers. AngularJS certification produces developers who can build single page web applications using...<br>
+							<div class="read1"><b> Read More </b></div></p>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			</div>
+		</main>
+	</section> <br><br>
+
+							<!-- -------  CLIENT  ------ -->
+
+	<div class="client">
+		<div class="section_2">
+			<div class="client_top">
+				<h2> Clients </h2>
+				<p class="c"> Trusted by the best </p>
+			</div>
+
+			<div class="client_img">
+				<img class="i1" src="https://www.teqstories.com/assets/images/01.png">
+				<img class="i1" src="https://www.teqstories.com/assets/images/02.png">
+				<img class="i1" src="https://www.teqstories.com/assets/images/03.png">
+				<img class="i1" src="https://www.teqstories.com/assets/images/04.png">
+				<img class="i1" src="https://www.teqstories.com/assets/images/05.png">
+				<img class="i1" src="https://www.teqstories.com/assets/images/06.png">
+			</div>
+		</div>
+	</div>
+
+							<!-- --------- ADVANTAGE ------- -->
+
+	<div class="advantage">
+		<div class="section_3">
+			<div class="advantage_top">
+				<h2> The Teqstories Advantage </h2>
+			</div>
+		</div>	
+
+		<div class="advange_main">
+			<div class="row2">
+				<div class="col2">
+					<div class="demo_img">
+						<img class="a_img" 
+						src="https://www.teqstories.com/assets/images/adv03.jpg">
+						<p class="pera"><b> Free Demo Session </b></p>
+						<hr>
+						<p class="advantage_detail">
+							Experience the Demo session from our best instructors by getting in touch with our technical representatives.
+						</p>
+					</div>
+
+					<div class="access_img">
+						<img class="a_img" 
+						src="https://www.teqstories.com/assets/images/adv02.jpg">
+						<p class="pera"><b> Access to LMS </b></p>
+						<hr>
+						<p class="advantage_detail">
+							The TeqStories LMS portal keeps you updated with a huge library of recorded video lectures and supports with an active community for all your queries.
+						</p>
+					</div>
+
+					<div class="support_img">
+						<img class="a_img" 
+						src="https://www.teqstories.com/assets/images/adv01.jpg">
+						<p class="pera"><b> Access to LMS </b></p>
+						<hr>
+						<p class="advantage_detail">
+							The TeqStories LMS portal keeps you updated with a huge library of recorded video lectures and supports with an active community for all your queries.
+						</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+								<!-- -------  FAQs  -------- -->
+
+	<div class="Faq_main">
+		<div class="section_4">
+			<div class="faq_head">
+				<h2> FAQs </h2>
+			</div>
+
+			<div class="faq_que">
+				<table>
+					<tr>
+						<td class="faq1_left"> What is Teqstories? </td>
+						<td class="faq1_right"> <i class="fa fa-angle-down" aria-hidden="true"></i></td>
+					</tr>
+					<tr>
+						<td class="faq1_left">What are the prerequisites to join Teqstories?
+						</td>
+						<td class="faq1_right"> <i class="fa fa-angle-down" aria-hidden="true"></i></td>
+					</tr>
+					<tr>
+						<td class="faq1_left"> Why should one prefer online training over classroom training? </td>
+						<td class="faq1_right"> <i class="fa fa-angle-down" aria-hidden="true"></i></td>
+					</tr>
+					<tr>
+						<td class="faq1_left"> How can one enroll with Teqstories? </td>
+						<td class="faq1_right"> <i class="fa fa-angle-down" aria-hidden="true"></i></td>
+					</tr>
+					<tr>
+						<td class="faq1_left"> What if I don’t like the course I enrolled in? </td>
+						<td class="faq1_right"> <i class="fa fa-angle-down" aria-hidden="true"></i></td>
+					</tr>
+					<tr>
+						<td class="faq1_left"> What is the minimum experience required to pursue any course with Teqstories? </td>
+						<td class="faq1_right"> <i class="fa fa-angle-down" aria-hidden="true"></i></td>
+					</tr>
+					<tr>
+						<td class="faq1_left"> What does Teqstories courses include? </td>
+						<td class="faq1_right"> <i class="fa fa-angle-down" aria-hidden="true"></i></td>
+					</tr>
+					<tr>
+						<td class="faq1_left"> How long does it take to complete this course? </td>
+						<td class="faq1_right"> <i class="fa fa-angle-down" aria-hidden="true"></i></td>
+					</tr>
+					<tr>
+						<td class="faq1_left"> Can I continue to access the course even after I complete it? </td>
+						<td class="faq1_right"> <i class="fa fa-angle-down" aria-hidden="true"></i></td>
+					</tr>
+					<tr>
+						<td class="faq1_left">Is Teqstories an accredited institution? Will I be receiving anything after I complete a course? </td>
+						<td class="faq1_right"> <i class="fa fa-angle-down" aria-hidden="true"></i></td>
+					</tr>
+
+				</table>
+			</div>
+		</div>
+	</div>
+
+</body>
+</html>

@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title> Multi Pagination </title>
+	<link rel="stylesheet" type="text/css" href="C:\Users\Dell\Desktop\wd_24th_Aug\sonali\CSS Design\font-awesome-4.7.0\css\font-awesome.min.css">
+	<style type="text/css">
+		
+					/*	----  First ----*/
+
+		.one ul{
+			list-style-type: none;
+		}
+		.one ul li{
+			display: inline-block;
+		}
+		.one ul li a{
+			text-decoration: none;
+			font-size: 22px;
+			font-family: Arial;
+			color: grey;
+		}
+		.f1{
+			background-color: #0080ff;
+			border-radius: 8px;
+			padding: 13px 18px;
+		}
+		.center{
+			padding: 15px;
+		}
+		.slide1{
+			padding: 40px;
+		}
+		.fa-ellipsis-h{
+			color: grey;
+			font-size: 20px;
+		}
+
+					/* ----- second ---- */
+
+		.two ul{
+			list-style-type: none;
+		}
+		.two ul li{
+			display: inline-block;
+		}
+		.two ul li a{
+			text-decoration: none;
+			font-family: Arial;
+			font-size: 22px;
+			color: grey;
+			border: 2px solid #0080ff;
+			border-radius: 8px;
+			padding: 15px 22px;
+			margin: 3px;
+		}
+		.two ul li i.fa-ellipsis-h{
+			font-size: 24px;
+			color: grey;
+			border: 2px solid #0080ff;
+			border-radius: 8px;
+			padding: 14px 18px 16px 18px;
+		}
+		.f2{
+			background-color: #0080ff;
+		}
+
+					/*	---- Third ----*/
+
+		.three ul{
+			list-style-type: none;
+			border: 2px solid #0080ff;
+			width: 52%;
+			margin-left: 45px;
+		}
+		.three ul li{
+			display: inline-block;
+		}
+		.three ul li a{
+			text-decoration: none;
+			font-size: 20px;
+			font-family: Arial;
+			color: grey;
+			/*padding: 15px 20px 15px 17px;*/
+		}
+		.f3{
+			background-color: #0080ff;
+			padding: 20px 26px;
+		}
+		.slide2{
+			padding: 0px 40px 0px 40px;
+		}
+		.cn1{
+			padding: 10px;
+		}
+		.three ul li i.fa-ellipsis-h{
+			padding: 10px;
+		}
+
+					/*	----- Fourth ----- */
+
+		.four ul{
+			list-style-type: none;
+		}
+		.four ul li{
+			display: inline-block;
+		}
+		.four ul li a{
+			text-decoration: none;
+			font-family: Arial;
+			font-size: 20px;
+			color: grey;
+		}
+		.slide3{
+			padding: 20px 40px;
+			background: #0080ff;
+			border-radius: 8px;
+		}
+		.cn2{
+			padding: 13px 20px;
+		}
+		.f4{
+			background: #0080ff;
+			padding: 15px 20px;
+			border-radius: 8px;
+		}
+
+				/*	----- Five -----   */
+
+		.five ul{
+			list-style-type: none;
+		}
+		.five ul li{
+			display: inline-block;
+			margin: 5px;
+		}
+		.five ul li a{
+			text-decoration: none;
+			font-family: Arial;
+			font-size: 22px;
+			color: grey;
+			border: 2px solid #0080ff;
+			border-radius: 8px;
+			padding: 15px 22px;
+			margin: 3px;
+		}
+		.f5{
+			background: #0080ff;
+		}
+		.slide4{
+			background: #0080ff;
+			padding: 17px;
+			border-radius: 8px;
+		}
+
+				/*	----- six -----   */
+
+		.six ul{
+			list-style-type: none;
+		}
+		.six ul li{
+			display: inline-block;
+
+		}
+		.six ul li a{
+			text-decoration: none;
+			border: 2px solid #0080ff;
+			padding: 16px 22px;
+			font-size: 20px;
+			font-family: Arial;
+			color:  grey;
+			margin: -2px;
+		}
+		.slide5{
+			padding: 18px 2px 18px 0px;
+			margin-left: -2px;
+			background: #0080ff;
+			border-radius: 8px;
+		}
+		.six ul li i.fa-ellipsis-h{
+			border: 2px solid #0080ff;
+			padding: 16.6px 17px; 
+			margin: 0px -2px 0px -2px; 
+		}
+		.f6{
+			background: #0080ff;
+		}
+
+
+	</style>
+</head>
+<body>
+
+	<div class="one">
+		<ul>
+			<li class="slide1">
+				<a href=""><i class="fa fa-long-arrow-left" aria-hidden="true"> Prev </i></a>
+			</li>
+			<li class="center"><a href="" class="f1" style="color: white;"> 1 </a></li>
+			<li class="center"><a href=""> 2 </a></li>
+			<li class="center"><a href=""> 3 </a></li>
+			<li class="center"><a href=""> 4 </a></li>
+			<li class="center"> <i class="fa fa-ellipsis-h" aria-hidden="true"></i> </li>
+			<li class="center"><a href=""> 17 </a></li>
+			<li class="center"><a href=""> 18 </a></li>
+			<li class="center"><a href=""> 19 </a></li>
+			<li class="center"><a href=""> 20 </a></li>
+			<li class="slide1">
+				<a href="">  Next <i class="fa fa-long-arrow-right" aria-hidden="true"></i></a>
+			</li>
+		</ul>
+	</div>
+
+	<div class="two">
+		<ul>
+			<li><a href=""><i class="fa fa-long-arrow-left" aria-hidden="true"> Prev </i></a></li>
+			<li><a href=""> 1 </a></li>
+			<li><a href=""> 2 </a></li>
+			<li><a href=""> 3 </a></li>
+			<li><a href=""> 4 </a></li>
+			<li><a href="" class="f2" style="color: white;"> 5 </a> </li>
+			<li><a href=""> 6 </a></li>
+			<li><a href=""> 7 </a></li>
+			<li> <i class="fa fa-ellipsis-h" aria-hidden="true"> </i> </li>
+			<li><a href=""> 20 </a></li>
+			<li><a href="">  Next <i class="fa fa-long-arrow-right" aria-hidden="true"></i></a></li>
+		</ul>
+	</div> <br>
+
+	<div class="three">
+		<ul>
+			<li class="slide2">
+				<a href=""><i class="fa fa-long-arrow-left" aria-hidden="true"> Prev </i></a>
+			</li>
+			<li class="cn1"><a href=""> 1 </a></li>
+			<li class="cn1"><a href="" class="f3" style="color: white;"> 2 </a></li>
+			<li class="cn1"><a href=""> 3 </a></li>
+			<li class="cn1"><a href=""> 4 </a></li>
+			<li class="cn1"> <i class="fa fa-ellipsis-h" aria-hidden="true"> </i> </li>
+			<li class="cn1"><a href=""> 17 </a></li>
+			<li class="cn1"><a href=""> 18 </a></li>
+			<li class="cn1"><a href=""> 19 </a></li>
+			<li class="cn1"><a href=""> 20 </a></li>
+			<li class="slide2">
+				<a href=""> Next <i class="fa fa-long-arrow-right" aria-hidden="true"></i></a>
+			</li>
+		</ul>
+	</div> <br>	
+
+	<div class="four">
+		<ul>
+			<li class="slide3"><a href="" style="color: white;">
+				<i class="fa fa-long-arrow-left" aria-hidden="true"> Prev </i></a>
+			</li>
+			<li class="cn2"><a href=""> 1 </a></li>
+			<li class="cn2"><a href=""> 2 </a></li>
+			<li class="cn2"><a href=""> 3 </a></li>
+			<li class="cn2"><a href=""> 4 </a></li>
+			<li class="cn2"><a href="" class="f4" style="color: white;"> 5 </a></li>
+			<li class="cn2"><a href=""> 6 </a></li>
+			<li class="cn2"><a href=""> 7 </a></li>
+			<li class="cn2"><i class="fa fa-ellipsis-h" aria-hidden="true"> </i></a></li>
+			<li class="cn2"><a href=""> 20 </a></li>
+			<li class="slide3"><a href="" style="color: white;"> 
+				Next <i class="fa fa-long-arrow-right" aria-hidden="true"></i></a>
+			</li>
+		</ul>
+	</div> <br>
+
+	<div class="five">
+		<ul>
+			<li class="slide4"><a href="" style="color: white;">
+				<i class="fa fa-long-arrow-left" aria-hidden="true"> Prev </i></a>
+			</li>
+			<li><a href=""> 1 </a></li>
+			<li><a href=""> 2 </a></li>
+			<li><a href=""> 3 </a></li>
+			<li><a href=""> 4 </a></li>
+			<li><a href="" class="f5" style="color: white;"> 5 </a> </li>
+			<li><a href=""> 6 </a></li>
+			<li><a href=""> 7 </a></li>
+			<li> <i class="fa fa-ellipsis-h" aria-hidden="true"> </i> </li>
+			<li><a href=""> 20 </a></li>
+			<li class="slide4"> <a href="" style="color: white;">  
+				Next <i class="fa fa-long-arrow-right" aria-hidden="true"></i></a>
+			</li>
+		</ul>
+	</div> <br>
+
+	<div class="six">
+		<ul>
+			<li class="slide5"><a href=""  style="color: white;">
+				<i class="fa fa-long-arrow-left" aria-hidden="true"> Prev </i></a>
+			</li>
+			<li class="cn3"><a href=""> 1 </a></li>
+			<li class="cn3"><a href="" class="f6" style="color: white;"> 2 </a></li>
+			<li class="cn3"><a href=""> 3 </a></li>
+			<li class="cn3"><a href=""> 4 </a></li>
+			<li class="cn3"> <i class="fa fa-ellipsis-h" aria-hidden="true"> </i> </li>
+			<li class="cn3"><a href=""> 17 </a></li>
+			<li class="cn3"><a href=""> 18 </a></li>
+			<li class="cn3"><a href=""> 19 </a></li>
+			<li class="cn3"><a href=""> 20 </a></li>
+			<li class="slide5"><a href=""  style="color: white;"> 
+				Next <i class="fa fa-long-arrow-right" aria-hidden="true"></i></a>
+			</li>
+		</ul>
+	</div> 
+
+
+</body>
+</html>

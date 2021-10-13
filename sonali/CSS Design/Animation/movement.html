@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title> Movement Animation </title>
+	<style type="text/css">
+		
+		h1{
+			margin-top: 50px;
+		}
+		h1 ,p{
+			text-align: center;
+		}
+		p{
+			margin-bottom: 50px;
+		}
+		div{
+			animation-name: text;
+			animation-duration: 3s;
+			width: 400px;
+			background: lightcoral;
+			color: white;
+			font-size: 23px;
+			padding: 10px;
+		}
+		.one{
+			animation-fill-mode: none;
+		}
+		.two{
+			animation-fill-mode: forwards;
+		}
+		.three{
+			animation-fill-mode: backwards;
+			animation-delay: 3s;
+		}
+		.four{
+			animation-fill-mode: both;
+			animation-delay: 5s;
+		}
+
+		@keyframes text{
+			from{
+				background-color: #bf00ff;
+				margin-left: 0;
+			}
+			to{
+				margin-left: 70%;
+				background: #bf00ff;
+			}
+		}
+
+	</style>
+</head>
+<body>
+
+	<h1> Movement Animation </h1>
+	<p> A computer science portal </p>
+	<div class="one"> None </div> <br>
+	<div class="two"> Forwords </div> <br>
+	<div class="three"> Backwords </div> <br>
+	<div class="four"> both </div>
+
+</body>
+</html>
