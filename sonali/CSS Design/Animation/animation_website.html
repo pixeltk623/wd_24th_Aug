@@ -3,6 +3,7 @@
 <head>
 	<meta charset="utf-8">
 	<title> Animaton Website </title>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
 	<style type="text/css">
 		
 		*{
@@ -25,71 +26,81 @@
 		   background-color: black;
 		   opacity: 0.3;
 		   z-index:-999; 
-		  }
-
-		  nav{
-		  	background-color: black;
-		  	opacity: 0.2;
-		  	overflow: hidden;
-		  }
-		  .nav-left{
-		  	width: 50%;
-		  	float: left;
-		  }
-		  .nav-left h2{
-		  	color: white;
-		  	padding: 20px;
-		  	margin-left: 100px;
-		  	animation-name: bharat;
-		  	animation-duration: 0.5s;
-		  	animation-iteration-count: infinite;
-		  }
-		  .nav-right{
-		  	width: 50%;
-		  	float: right;
-		  }
-		  nav ul{
-		  	list-style-type: none;
-		  	margin-left: 200px;
-		  }
-		  nav ul li {
-		  	text-align: center;
-		  	padding: 25px;
-		  	float: left;
-		  }
-		  nav ul li a{
-		  	font-size: 18px;
-		  	color: white;
-		  	text-decoration: none;
-		  }
-		  nav ul li a.active{
-		  	color: #00cccc;
-		  	opacity: none;
-		  }
-		  section{
+		}
+										/*----- NAV BAR ------*/
+		nav{
+			background-color: rgb(0, 0, 0,0.2);
+			overflow: hidden;
+			padding: 25px;
+		}
+		nav h2{
+			color: white;
+			font-family: Arial;
+			padding-left: 50px;
+			margin-top: 5px;
+		}
+		.nav-right{
+			width: 50%;
+			float: left;
+		}
+		.nav-left{
+			width: 50%;
+			float: left;
+		}
+		nav ul{
+			list-style-type: none;
+			margin-left: 200px;
+			margin-top: 5px;
+		}
+		nav ul li{
+			float: left;
+			padding-left: 60px;
+		}
+		nav ul li a{
+			text-decoration: none;
+			color: white;
+			font-family: Arial;
+			font-weight: bold;
+		}
+		.home{
+			color: #00b894;
+		}		
+		section{
 		  	text-align: center;
 		  	margin: 250px;
 		  	position: relative;
 		  	font-family: Arial;
 		  	color: white;
+		  	letter-spacing: 3px;
 		  	text-shadow: 2px 1px 5px  rgb(13, 13, 13);
-		  }
-		  .h2{
-		  	text-align: center;
-		  	display: inline-block;
-		  }
-		  .wc{
-		  	padding-bottom: 30px;
-		  	font-size: 30px;
-		  	letter-spacing: 2px;
-		  }
-		  .p{
-		  	font-size: 18px;
-		  	letter-spacing: 1px;
-		  }
-		  .button{
-		  }
-		  input[name=learn]{
+		}
+		h3{
+			font-size: 25px;
+		}
+		h1{
+			padding-top: 20px;
+			font-size: 40px;
+		}
+		p{
+			padding-top: 20px;
+			font-size: 18px;
+		}
+		.change-content:after{
+			content: '';
+			animation: changetext 10s infinite linear;
+			color: #00b894;
+		}
+
+		@keyframes changetext{
+			0%{content: "Darjeeling";}
+			20%{content: "Agra";}
+			35%{content: "Jaipur";}
+			60%{content: "kerela";}
+			80%{content: "Delhi";}
+			100%{content: "Mumbai";}
+		}
+
+		input[name=learn]{
 		  	background: white;
 		  	color: black;
 		  	border: none;
@@ -100,8 +111,8 @@
 		  	height: 28px;
 		  	width: 13%;
 		  	letter-spacing: 1px;
-		  }
-		  input[name=signup]{
+		}
+		input[name=signup]{
 		  	background: #009973;
 		  	color: white;
 		  	border: none;
@@ -112,7 +123,7 @@
 		  	height: 28px;
 		  	width: 13%;
 		  	letter-spacing: 1px;
-		  }
+		}
 
 
 	</style>
@@ -122,30 +133,24 @@
 	<div id="color-overlay"></div>
 
 	<nav>
-		<div class="nav-row"> 
-			<div class="nav-left">
-				<h2> MERA BHARAT </h2>
-			</div>
+		<div class="nav-right">
+			<h2 class="animate__animated animate__heartBeat"> MERA BHARAT </h2>
+		</div>
 
-			<div class="nav-right">
-				<ul>
-					<li><a clas="active" href=""> HOME </a></li>
-					<li><a href=""> GALLERY </a></li>
-					<li><a href=""> ABOUT </a></li>
-					<li><a href=""> CONTACT </a></li>
-				</ul>
-			</div>
+		<div class="nav-left">
+			<ul>
+				<li><a href="" class="home"> HOME </a></li>
+				<li><a href=""> GALLERY </a></li>
+				<li><a href=""> ABOUT </a></li>
+				<li><a href=""> CONTACT </a></li>
+			</ul>
 		</div>
 	</nav>
 
 	<section>
-		<div class="h2">
-			<p class="wc"> Welcome to Aagra </p>
-		</div>
-
-		<div class="p">
+			<h3> Welcome to Aagra </h3>
+			<h1> DO COME & VISIT <span class="change-content">  </span></h1>
 			<p>"India once is not enough"</p>
-		</div>
 
 		<div class="button">
 			<input type="button" name="learn" value="Learn More">
