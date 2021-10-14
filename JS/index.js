@@ -143,18 +143,18 @@ var flotValue = 56.325 // float
 
 
 
-var x = 5
+// var x = 5
 
-console.log(x) // 5  True => 5
+// console.log(x) // 5  True => 5
 
-// console.log(x+1);
+// // console.log(x+1);
 
-console.log(x++); //  6 True => 5
+// console.log(x++); //  6 True => 5
 
-console.log(x); // 5 True => 6
-console.log(++x); // 6 True => 7
+// console.log(x); // 5 True => 6
+// console.log(++x); // 6 True => 7
 
-console.log(x); // 5 True => 7
+// console.log(x); // 5 True => 7
 
 
 
