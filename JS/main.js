@@ -97,7 +97,7 @@ function getNameOfById() {
 	h1.style.display = "none";
 
 	h1.innerHTML = "Sharvan Kumar";
-	
+
 	// h1.style.display = "block";
 	// h1.style.backgroundColor = "black";
 	// h1.style.padding = "15px";
