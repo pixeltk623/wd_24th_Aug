@@ -217,3 +217,163 @@
 // 	console.log(i)
 // }
 
+
+var nameOfUser = ["Sharvan", "Dixit", "Renish", "Devin", "Sonali"];
+
+// console.log(nameOfUser);
+
+// console.log(nameOfUser[5]);
+
+//console.log(nameOfUser.length);
+
+// for (var i = 0; i < nameOfUser.length; i++) {
+	
+// 	console.log(nameOfUser[i]);
+// }
+
+
+// var user = "Sharvan"
+
+// user += "Dixit" // user + "Dixit"
+
+// user += "Ram" // Sharvan Dixit + Ram
+
+// user += "Ram" // Sharvan Dixit + Ram
+
+
+
+// console.log(user);
+
+
+	
+	//var html = '';
+
+
+ // 	html += "<ul>";
+	// 	html +=	"<li>Test</li>";
+	// 	html +=	"<li>Test</li>";
+	// 	html +=	"<li>Test</li>";
+	// 	html +=	"<li>Test</li>";
+	// 	html +=	"<li>Test</li>";
+	// html += "</ul>";
+
+
+	// document.getElementById("res").innerHTML = html;
+
+	// console.log(html);
+
+	// var html = '';
+
+	// html += "<ul>";
+	// for (var i = 0; i < nameOfUser.length; i++) {
+	// 	html += "<li>"+nameOfUser[i]+"</li>";
+	// }
+	// html += "</ul>";
+
+
+	// //console.log(html);
+
+	// document.getElementById("res").innerHTML = html;
+
+	// 1 - 10 
+
+	// Even No = > green 
+
+	// Odd No = > Red
+
+
+	// var html = '';
+
+	// html += "<ul>";
+	// for (var i = 1; i <= 10; i++) {
+	// 	if (i%2==0) {
+	// 		html += "<li style='color:green;'>"+i+"</li>";
+	// 	} else {
+	// 		html += "<li style='color:red;'>"+i+"</li>";
+	// 	}
+		
+	// }
+	// html += "</ul>";
+
+
+	// //console.log(html);
+
+	// document.getElementById("res").innerHTML = html;
+
+
+	// function calculateFact() {
+
+	// 	var number = document.getElementById("number").value;
+ 
+	// 	var fact = 1; // 5 // 20 
+	// 	//console.log(number);
+
+	// 	if (number>=0) {
+			
+	// 		if (number==0) {
+	// 			console.log('Fact of ', number, " is ", fact);
+	// 		} else {
+
+	// 			for (var i = number; i >= 1; i--) {
+					
+	// 				fact = fact * i // 1 * 5
+
+	// 				// 1 * 5 // 5
+	// 				// 5 * 4 // 20
+	// 				// 20 * 3 // 60
+	// 				// 60 * / // 120
+	// 				// 120 * 1 // 120
+	// 			}
+
+	// 			console.log(fact);
+	// 			document.getElementById("res").innerHTML = fact;
+
+	// 		}
+
+	// 	} else {
+	// 		console.log('Fact is Not Possible for -ve number');
+	// 	}
+
+
+	// }
+
+
+
+// function calculatePrime() {
+// 	var number = document.getElementById("number").value;
+// 	var count = 0;
+// 	var html = '';
+// 	if (number>0) {
+
+// 		if (number==1) {
+// 			//console.log(number, 'Number is Not Prime');
+// 			html = "<h2 style='color: red;'>"+number+ " Number is Not Prime</h2>";
+// 		} else {
+			
+// 			for(var i = 1; i<=number; i++) {
+
+// 				if (number%i==0) {
+// 					count++;
+// 				}
+
+// 			}
+
+// 			//console.log(count);
+
+// 			if (count==2) {
+// 				html = "<h2 style='color: green;'>"+number+ " Number is Prime</h2>";
+// 			} else {
+// 				html = "<h2 style='color: red;'>"+number+ " Number is Not Prime</h2>";
+// 			}
+// 		}
+
+// 	} else {
+// 		//console.log(number, ' Number is Invalid');
+// 		html = "<h2 style='color: red;'>"+number+ " Number is Invalid</h2>";
+// 	}
+
+// 	//console.log(html);
+
+// 	document.getElementById("res").innerHTML = html; 
+// }
+
