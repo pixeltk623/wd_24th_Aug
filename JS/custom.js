@@ -377,3 +377,54 @@ var nameOfUser = ["Sharvan", "Dixit", "Renish", "Devin", "Sonali"];
 // 	document.getElementById("res").innerHTML = html; 
 // }
 
+// var html = "";
+// html += "<table border='1' style='border-collapse: collapse; width: 100%;'>";
+// for(var i = 1; i<=8; i++) {
+// 	html += "<tr>";
+// 	for (var j = 1; j<=8; j++) {
+
+// 		if((i+j)%2==0) {
+// 			html += "<td style='height: 63px;'></td>";
+// 		} else {
+// 			html += "<td style='height: 63px; background-color:black;'>Odd</td>";
+// 		}
+
+		
+// 	}
+// 	html += "</tr>";
+// }
+// html += "</table>";
+// document.getElementById("table").innerHTML = html;
+
+
+// var n = 123
+
+// var count = 0;
+// while(n>0) {
+
+// 	n = parseInt(n/10);
+// 	count++;
+
+// }
+
+// console.log(count)
+
+
+// var n = 123
+// var sum = 0;
+// var rem;
+// while(n>0) {
+
+// 	rem = n%10; // 3
+
+// 	sum = sum+ rem; // 0 + 3 // 3
+
+// 	n = parseInt(n/10); //
+
+// }
+
+// console.log(sum)
+
+
+
+
