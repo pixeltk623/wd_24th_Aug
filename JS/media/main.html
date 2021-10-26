@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+
+	<form method="post">
+		<label>Number1 </label>
+		<input type="text" name="Number1" id="Number1" class="Number1">
+		<span id="e1"></span>
+		<br><br>
+
+		<label>Number2 </label>
+		<input type="text" name="Number2" id="Number2">
+		<span id="e2"></span>
+		<br><br>
+
+		<label>Operation </label>
+		
+		<select id="op" name="op">
+			<option value="">Select</option>
+			<option value="+">Add</option>
+			<option value="-">Sub</option>
+			<option value="*">Mul</option>
+			<option value="/">Div</option>
+		</select>
+		<span id="e3"></span>
+		<br><br>
+
+		<input type="submit" name="submit" value="Cal" onclick="return makeCal()">
+
+	</form>
+
+	<div id="res"></div>
+
+	<script src="main.js"></script>
+</body>
+</html>
