@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<style type="text/css">
+		table tr th,td {
+			padding: 10px;
+		}
+	</style>
+</head>
+<body>
+	<form method="POST">
+		<!-- <label>Gender</label>
+		<input type="radio" name="gender" value="Male">Male
+		<input type="radio" name="gender" value="Female">Female
+
+		<span id="error1"></span>
+		<br><br>
+
+		<input type="submit" name="submit" onclick="return genderValidation()"> -->
+
+		<!-- <label>Hobby</label>
+		<input type="checkbox" name="hobby" value="HTML"> HTML
+		<input type="checkbox" name="hobby" value="Python"> Python
+		<input type="checkbox" name="hobby" value="PHP"> PHP
+		<input type="checkbox" name="hobby" value="Java"> Java
+		<input type="checkbox" name="hobby" value="React"> React
+		<span id="error2"></span>
+		
+		<br><br>
+		<input type="submit" name="submit" onclick="return hobbyValidation()"> -->
+
+
+		<!-- <label>Password: </label>
+		<input type="password" name="password" id="password">
+		<span style="background-color: blue; color: white; padding: 3px; border-radius: 50%;" onclick="showHidePass()">Show/Hide</span>
+		<br><br> -->
+
+		<label>Profile Pic</label>
+		<input type="file" name="profilePic" id="profilePic">
+
+		<br><br>
+		<input type="submit" name="submit" onclick="return fileUplaod();">
+
+	</form>
+	<br><br>
+	<div id="res"></div>
+	<script type="text/javascript">
+		// function genderValidation() {
+		// 	//console.log('Hi');
+
+		// 	let gender = document.getElementsByName('gender');
+		// 	var genderValue = "";
+
+		// 	for(var i = 0; i<gender.length; i++) {
+		// 		//console.log(i);
+
+		// 		if(gender[i].checked==true) {
+		// 			genderValue = gender[i].value;
+		// 		}
+		// 	}
+
+		// 	if(genderValue=='') {
+		// 		document.getElementById('error1').innerHTML = "Gender is not selected";
+		// 	} else {
+		// 		document.getElementById('error1').innerHTML = "";
+
+		// 		var html = "";
+
+		// 		html += '<table border="1" style="border-collapse: collapse;" width="300">';
+		// 		html += '	<tr>';
+		// 		html += '		<th>Gender</th>';
+		// 		html += '		<td>'+genderValue+'</td>';
+		// 		html += '	</tr>';
+		// 		html += '</table>';
+		// 		document.getElementById("res").innerHTML = html;
+
+		// 	}
+
+		
+
+			
+		// 	console.log(genderValue);
+
+		// 	// console.log(gender);
+		// 	// console.log(gender[0].checked);
+		// 	// console.log(gender[1].checked);
+
+		// 	// if(gender[0].checked == true || gender[1].checked == true) {
+		// 	// 	console.log('ok ');
+		// 	// } else {
+		// 	// 	console.log('Pz select radio button');
+		// 	// }
+
+		// 	return false;
+		// }
+
+		function hobbyValidation() {
+			//console.log('hi');
+
+			let hobby = document.getElementsByName("hobby");
+
+			var listOfHobbyValues = []
+
+			//console.log(listOfHobbyValues);
+
+			//console.log(hobby);
+
+			for(let i=0; i<hobby.length; i++) {
+
+				if (hobby[i].checked) {
+					listOfHobbyValues.push(hobby[i].value)
+				}
+
+			}
+
+			//console.log(listOfHobbyValues);
+
+			if(listOfHobbyValues.length==0) {
+				document.getElementById('error2').innerHTML = "Not selected";
+			} else if (listOfHobbyValues.length==1){
+				document.getElementById('error2').innerHTML = "Minimum 2 selected";
+			} else {
+				document.getElementById('error2').innerHTML = "";
+
+				var html = "";
+
+				html += '<table border="1" style="border-collapse: collapse;" width="300">';
+				html += '	<tr>';
+				html += '		<th>Hobby</th>';
+				html += '		<td>'+listOfHobbyValues+'</td>';
+				html += '	</tr>';
+				html += '</table>';
+				document.getElementById("res").innerHTML = html;
+
+			}
+
+			return false;
+		}
+
+		function showHidePass() {
+			var password = document.getElementById("password");
+
+			//console.log(password.type);
+
+			if(password.type=='password') {
+				password.type = "text";
+			} else {
+				password.type = "password";
+			}
+		}		
+
+		function fileUplaod() {
+			
+			var fileUploadT = document.getElementById("profilePic");
+
+
+			if(fileUploadT['files'].length==0) {
+ 				console.log('File is Not selected');
+			} else {
+				console.log(fileUploadT['files']);
+			}
+
+			
+
+			return false;
+		}
+	</script>
+</body>
+</html>

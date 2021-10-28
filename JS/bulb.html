@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Bulb In Js</title>
+</head>
+<body>
+
+	<img src="media/OFFbulb.jpg" id="myImage">
+
+	<br><br>
+
+	<button type="button" onclick="bulbOn()">ON</button>
+
+	<button type="button" onclick="bulbOFF()">OFF</button>
+
+	<button type="button" onclick="OnOffBulb()">Switch</button>
+
+	<script type="text/javascript">
+		var myImage = document.getElementById('myImage');
+
+		// console.log(myImage.src = "file:///C:/Users/Sharvan/Documents/wd_24th_Aug/JS/media/ONbulb.jpg");
+		function bulbOn() {
+			//console.log('On ho gaya');
+			myImage.src = "media/ONbulb.jpg";
+		}
+
+		function bulbOFF() {
+			// console.log('Off ho gaya');
+			myImage.src = "media/OFFbulb.jpg";
+		}
+
+		function OnOffBulb() {
+
+			if(myImage.src == "file:///C:/Users/Sharvan/Documents/wd_24th_Aug/JS/media/OFFbulb.jpg") {
+				//console.log('Hi');
+				myImage.src = "media/ONbulb.jpg";
+			} else {
+				//console.log('Hello');
+				myImage.src = "media/OFFbulb.jpg";
+			}
+
+		}
+
+
+	</script>
+</body>
+</html>
