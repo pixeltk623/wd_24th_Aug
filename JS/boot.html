@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<style type="text/css">
+		.is-invalid {
+			border: 1px solid red;
+		}
+		.is-valid {
+			border: 1px solid green;
+		}
+	</style>
+</head>
+<body>
+
+	<input type="text" id="name" name="" class="name">
+
+	<button type="button" onclick="ValidateForm()">Validate</button>
+
+	<script type="text/javascript">
+		function ValidateForm() {
+
+			var nameOfU = document.getElementById('name').value;
+
+			if(nameOfU=='') {
+				document.getElementById("name").className = "is-invalid";
+			} else {
+				document.getElementById("name").className = "is-valid";
+			}
+
+
+		}
+	</script>
+</body>
+</html>

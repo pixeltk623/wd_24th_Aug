@@ -1,0 +1,75 @@
+<!-- 2018
+SUN  -->
+<!-- 
+HTML HTML5 -->
+<!-- 
+CSS & CSS3 -->
+
+<!-- Javascript / Jquery
+
+ -->
+<!-- 
+BOOTSTRAP -->
+<!-- 
+50 code 
+
+10 line -->
+
+
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+	<form method="post">
+		<label>Gender: </label>
+		<input type="radio" name="gender" value="Male">Male
+		<input type="radio" name="gender" value="Female">Female
+		<span id="er"></span>	
+		<br><br>
+		<input type="submit" name="submit" id="submit">
+	</form>
+
+	<div id="res"></div>
+
+
+	<script type="text/javascript">
+		document.getElementById("submit").addEventListener("click", genderVal);
+
+		function genderVal(e) {
+			e.preventDefault();
+
+			let gender = document.getElementsByName("gender");
+
+			//console.log(gender);
+
+			var genderValue = "";
+
+			for(let i = 0; i<gender.length; i++) {
+				//console.log(gender[i].checked);
+
+				if(gender[i].checked) {
+					genderValue = gender[i].value;
+				}
+
+			}
+
+			//console.log(genderValue);
+
+			if(genderValue=='') {
+				console.log('Gender is Not selected');
+
+				document.getElementById("er").innerHTML = "Gender is Not selected";
+			} else {
+				console.log(genderValue);
+
+				document.getElementById("res").innerHTML = genderValue;
+				document.getElementById("er").innerHTML = "";
+			}
+		}
+	</script>
+</body>
+</html>
+
+

@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+	<form method="post">
+		<!-- <label>Name: </label>
+		<input type="text" name="name" id="name" onkeyup="getMyName()">
+		<span id="e1"></span> -->
+
+		<label>Password</label>
+		<input type="password" name="password" id="password" onkeyup="getPassword()">
+		<br><br>
+		<div id="result">
+			<span id="e2">One lowercase character</span><br><br>
+			<span id="e3">One uppercase character</span><br><br>
+			
+			<span id="e4">One number</span><br><br>
+			<span id="e5">One special character</span><br><br>
+
+			<span id="e6">8 characters minimum</span>
+		</div>
+		<div id="ALLoK"></div>
+
+		<br><br>
+		<button type="button" id="button">Submit</button>
+	</form>
+
+	<script type="text/javascript">
+
+		var button = document.getElementById("button");
+
+		button.disabled = true;
+
+		function getMyName() {
+
+			var nameOfUser = document.getElementById('name').value;
+
+			// console.log(nameOfUser.toUpperCase());
+
+			//document.getElementById('name').value = nameOfUser.toUpperCase();
+
+			// if(nameOfUser=='') {
+
+			// 	console.log('Name Can Not be blank');
+			// 	document.getElementById('e1').innerHTML = "Name Can Not be blank";
+			// 	document.getElementById('e1').style.color = "red";
+			// } else {
+
+			// 	if(nameOfUser.length<=5) {
+			// 		document.getElementById('e1').innerHTML = "Length Issue";
+			// 		document.getElementById('e1').style.color = "red";
+			// 	} else {
+			// 		document.getElementById('e1').innerHTML = "";	
+			// 	}
+				
+			// }
+
+		}
+
+		function getPassword() {
+			var password = document.getElementById("password").value;
+
+			//console.log(password);
+
+			//console.log(/[a-z]/.test(password))
+
+			if(/[a-z]/.test(password)) {
+				document.getElementById("e2").style.color = 'lightgrey';
+			} else {
+				document.getElementById("e2").style.color = 'black';
+			}
+
+			if(/[A-Z]/.test(password)) {
+				document.getElementById("e3").style.color = 'lightgrey';
+			} else {
+				document.getElementById("e3").style.color = 'black';
+			}
+
+			if(/[0-9]/.test(password)) {
+				document.getElementById("e4").style.color = 'lightgrey';
+			} else {
+				document.getElementById("e4").style.color = 'black';
+			}
+
+
+			if(/[\!\@\#\$\%\^\&\*\)\(\+\=\.\<\>\{\}\[\]\:\;\'\"\|\~\`\_\-]/g.test(password)) {
+				document.getElementById("e5").style.color = 'lightgrey';
+			} else {
+				document.getElementById("e5").style.color = 'black';
+			}
+
+			if(password.length>=8) {
+				document.getElementById("e6").style.color = 'lightgrey';
+			} else {
+				document.getElementById("e6").style.color = 'black';
+			}
+
+			if(/[a-z]/.test(password) && /[A-Z]/.test(password) && /[0-9]/.test(password) && /[\!\@\#\$\%\^\&\*\)\(\+\=\.\<\>\{\}\[\]\:\;\'\"\|\~\`\_\-]/g.test(password) && password.length>=8) {
+
+				document.getElementById("result").style.display = "none";
+				document.getElementById("ALLoK").innerHTML = "<h2>All Ok</h2>";
+
+				button.disabled = false;
+
+			} else {
+				document.getElementById("result").style.display = "block";
+				document.getElementById("ALLoK").innerHTML = "";
+				button.disabled = true;
+			}
+		}
+	</script>
+</body>
+</html>
