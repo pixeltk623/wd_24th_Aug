@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Jquery</title>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+	<style type="text/css">
+		div {
+
+		    width: 20px;
+		    height: 15px;
+		    background-color: #f33;
+		}
+	</style>
+</head>
+<body>
+
+	<!-- <button type="button" class="continue"></button>
+	<button type="button" class="continue"></button>
+	<button type="button" class="continue"></button>
+	<button type="button" class="continue"></button> -->
+	<!-- <h1>This is CSS Function</h1>
+	<p id="p1">1 Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+	tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+	quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+	consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+	cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+	proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+	<p>2 Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+	tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+	quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+	consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+	cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+	proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+	<p>3 Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+	tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+	quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+	consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+	cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+	proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+
+	<button type="button" id="hide">Hide</button>
+
+	<button type="button" id="show">Show</button>
+
+	<button type="button" id="dono">Hide/Show</button> -->
+
+	<div>click</div>
+	<div>click</div>
+
+	<script type="text/javascript">
+		$(document).ready(function(){
+
+			$(document).on("click","div", function() {
+					$(this).css(
+						{
+							width: function( index, value ) {
+      					return parseFloat( value ) * 2;
+    					},
+    					height: function( index, value ) {
+					      return parseFloat( value ) * 1.2;
+					    }
+				});
+			});
+			// var styles = {
+			//       backgroundColor : "#ddd",
+			//       color: "red"
+			//     };
+
+
+			// $("h1").css(styles)
+			// //$( "button.continue" ).html( "Next Step..." )
+
+			// $(document).on("click", "#hide", function() {
+			// 	//console.log('Hello This is kumar');
+
+			// 	$("#p1").hide()
+			// });
+
+			// $(document).on("click", "#show", function() {
+			// 	//console.log('Hello This is kumar');
+
+			// 	$("#p1").show()
+			// });
+
+			// $(document).on("click", "#dono", function() {
+			// 	//console.log('Hello This is kumar');
+
+			// 	$("#p1").toggle()
+			// });
+
+
+			// $( "p" ).on( "mouseenter", function() {
+			//     $( this ).css({
+			//       "background-color": "yellow",
+			//       "font-weight": "bolder"
+			//     });
+			//   })
+
+			//   .on( "mouseleave", function() {
+			//     var styles = {
+			//       backgroundColor : "#ddd",
+			//       fontWeight: ""
+			//     };
+			//     $( this ).css( styles );
+			//   });
+
+			$(document).on("mouseenter", "p", function(){
+				$(this).css("color","red");
+			});
+
+			$(document).on("mouseleave", "p", function(){
+				$(this).css({"backgroundColor":"#ddd", "color" : 'black'});
+			});
+
+
+		});
+	</script>
+</body>
+</html>
