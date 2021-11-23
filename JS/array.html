@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+	<form method="post">
+		<label>Email</label>
+		<input type="email" name="" id="email">
+		<br><br>
+		<label>Password</label>
+		<input type="password" name="" id="password">
+		<br><br>
+		<input type="submit" name="submit" value="Registration" onclick="return registerUser()">
+	</form>
+	<script type="text/javascript">
+	/*let fruits = ['Apple', 'Banana']
+
+	undefined
+	console.log(fruits)
+	VM141:1 (2) ['Apple', 'Banana']0: "Apple"1: "Banana"length: 2[[Prototype]]: Array(0)
+	undefined
+	fruits.length
+	2
+	fruits[1]
+	'Banana'
+	fruits[fruits.length - 1]
+	'Banana'
+	fruits.forEach(function(item, index, array) {
+	console.log(item, index)
+	})
+	VM283:2 Apple 0
+	VM283:2 Banana 1
+	undefined
+	fruits.push('Orange')
+	3
+	fruits
+	(3) ['Apple', 'Banana', 'Orange']
+	fruits.push("Test")
+	4
+	fruits
+	(4) ['Apple', 'Banana', 'Orange', 'Test']
+	fruits.pop()
+	'Test'
+	fruits
+	(3) ['Apple', 'Banana', 'Orange']
+	fruits.shift()
+	'Apple'
+	fruits
+	(2) ['Banana', 'Orange']
+	fruits.unshift("Test")
+	3
+	fruits
+	(3) ['Test', 'Banana', 'Orange']
+	fruits.indexOf("Banana")
+	1
+	fruits.indexOf("Orange")
+	2
+	fruits.indexOf("Orangesd")
+	-1
+	fruits.splice(1)
+	(2) ['Banana', 'Orange']
+	fruits.splice(1)
+	[]
+	fruits
+	['Test']
+	fruits.splice(1)
+	[]
+	fruits.splice(0)
+	['Test']
+	fruits
+	[]
+	let vegetables = ['Cabbage', 'Turnip', 'Radish', 'Carrot']
+	console.log(vegetables)
+	VM1063:2 (4) ['Cabbage', 'Turnip', 'Radish', 'Carrot']
+	undefined
+	vegetables.splice(0, 1)
+	['Cabbage']
+	vegetables
+	(3) ['Turnip', 'Radish', 'Carrot']
+	vegetables.splice(0, 3)
+	(3) ['Turnip', 'Radish', 'Carrot']
+	vegetables
+	[]
+	let vegetables = ['Cabbage', 'Turnip', 'Radish', 'Carrot']
+	undefined
+	vegetables
+	(4) ['Cabbage', 'Turnip', 'Radish', 'Carrot']
+	let shallowCopy = vegetables.slice() 
+	undefined
+	shallowCopy 
+	(4) ['Cabbage', 'Turnip', 'Radish', 'Carrot']
+	let years = [1950, 1960, 1970, 1980, 1990, 2000, 2010]
+	console.log(years.0)   // a syntax error
+	console.log(years[0])  // works properly
+	VM1323:2 Uncaught SyntaxError: missing ) after argument list
+	console.log(years[0])
+	VM1336:1 Uncaught ReferenceError: years is not defined
+	at <anonymous>:1:13
+	(anonymous) @ VM1336:1
+	let years = [1950, 1960, 1970, 1980, 1990, 2000, 2010]
+	undefined
+	years
+	(7) [1950, 1960, 1970, 1980, 1990, 2000, 2010]
+	years.0
+	VM1445:1 Uncaught SyntaxError: Unexpected number
+	years[0]
+	1950
+	fruits[5] = 'mango'
+	'mango'
+	Object.keys(fruits)
+	['5']
+	fruits.length
+	6*/
+	const fruits = []
+	// fruits.push('banana', 'apple', 'peach')
+
+	// console.log(fruits.length) // 3
+
+
+	// fruits[8] = 'mango'
+
+	// console.log(fruits.length);
+
+	// console.log(Object.keys(fruits))  // ['0', '1', '2', '5']	
+
+	// values = []
+	// for (let x = 0; x < 10; x++){
+	//  values.push([
+	//   2 ** x,
+	//   2 * x ** 2
+	//  ])
+	// }
+
+	// console.log(values);
+	// console.table(values)
+
+	// const array1 = ['a', 'b', 'c', 'd', 'e'];
+
+	// console.log(array1);
+
+	// // copy to index 0 the element at index 3
+
+	// console.log(array1.copyWithin(0, 3, 4));
+
+	// // expected output: Array ["d", "b", "c", "d", "e"]
+
+	// // copy to index 1 all elements from index 3 to the end
+	// console.log(array1.copyWithin(1, 3));
+	// // expected output: Array ["d", "d", "e", "d", "e"]
+
+	function registerUser() {
+		let email = document.getElementById('email').value;
+		let password = document.getElementById("password").value;
+
+		localStorage.setItem('email', email);
+		localStorage.setItem('password', password);
+
+		console.log('Registration Done');
+
+	}
+
+	</script>
+
+</body>
+</html>

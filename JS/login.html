@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+	<form method="post">
+		<label>Email</label>
+		<input type="email" name="" id="email">
+		<br><br>
+		<label>Password</label>
+		<input type="password" name="" id="password">
+		<br><br>
+		<input type="submit" name="submit" value="Login" onclick="return login()">
+	</form>
+	<script type="text/javascript">
+
+		function login() {
+			let email = document.getElementById('email').value;
+			let password = document.getElementById("password").value;
+
+			if(email==localStorage.getItem('email') && password == localStorage.getItem('password')) {
+				console.log('Login Done');
+			} else {
+				console.log('Email Or Password Wrong');
+			}
+ 
+			
+			return false;
+		}
+
+	</script>
+</body>
+</html>
