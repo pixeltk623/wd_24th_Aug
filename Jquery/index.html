@@ -44,23 +44,23 @@
 
 	<button type="button" id="dono">Hide/Show</button> -->
 
-	<div>click</div>
-	<div>click</div>
+	<!-- <div>click</div>
+	<div>click</div> -->
 
 	<script type="text/javascript">
 		$(document).ready(function(){
 
-			$(document).on("click","div", function() {
-					$(this).css(
-						{
-							width: function( index, value ) {
-      					return parseFloat( value ) * 2;
-    					},
-    					height: function( index, value ) {
-					      return parseFloat( value ) * 1.2;
-					    }
-				});
-			});
+			// $(document).on("click","div", function() {
+			// 		$(this).css(
+			// 			{
+			// 				width: function( index, value ) {
+   //    					return parseFloat( value ) * 2;
+   //  					},
+   //  					height: function( index, value ) {
+			// 		      return parseFloat( value ) * 1.2;
+			// 		    }
+			// 	});
+			// });
 			// var styles = {
 			//       backgroundColor : "#ddd",
 			//       color: "red"
@@ -104,13 +104,13 @@
 			//     $( this ).css( styles );
 			//   });
 
-			$(document).on("mouseenter", "p", function(){
-				$(this).css("color","red");
-			});
+			// $(document).on("mouseenter", "p", function(){
+			// 	$(this).css("color","red");
+			// });
 
-			$(document).on("mouseleave", "p", function(){
-				$(this).css({"backgroundColor":"#ddd", "color" : 'black'});
-			});
+			// $(document).on("mouseleave", "p", function(){
+			// 	$(this).css({"backgroundColor":"#ddd", "color" : 'black'});
+			// });
 
 
 		});

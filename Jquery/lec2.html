@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Jquery</title>
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css" integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+	<style type="text/css">
+		/*img {
+			display: none;
+		}*/
+	</style>
+</head>
+<body>
+<!-- 	<div id="res"></div>
+	<p></p>
+	
+	<h2>Greetings</h2>
+	<div class="container">
+	  <div class="inner">Hello</div>
+	  <div class="inner">Goodbye</div>
+	</div> -->
+	<div class="container mt-3">
+		<!-- <input type="text" name="" class="form-control mb-2" id="name">
+		<button type="button" class="btn btn-primary">Add Class/Remove Class</button> -->
+
+		<!-- <button class="btn btn-primary add" value="190">Add</button>
+		<button class="btn btn-primary add" value="12">Add</button>
+		<button class="btn btn-primary add" value="14">Add</button>
+		<button class="btn btn-primary add" value="19">Add</button>
+		<button class="btn btn-primary add" value="101">Add</button>
+		<button class="btn btn-primary add" value="25">Add</button> -->
+
+		<button type="button" class="btn btn-danger slideDown">Slide Down</button>
+		<br><br>
+
+		<img id="book" src="https://media.istockphoto.com/photos/row-of-books-on-a-shelf-multicolored-book-spines-stack-in-the-picture-id1222550815?b=1&k=20&m=1222550815&s=170667a&w=0&h=MTxBeBrrrYtdlpzhMpD1edwLYQf3OPgkNeDEgIzYJww=" alt="" width="500">
+
+	</div>
+	<script type="text/javascript">
+		$(document).ready(function(){
+
+
+			$(document).on("click",".btn", function() {
+				//$("#name").addClass("is-invalid");
+				//console.log($("#name"));
+				//console.log('Hello');
+				//$( ".inner" ).append( "<p>Test</p>" );
+				//$( ".inner" ).prepend( "<p>Test</p>" );
+				// $("#res").text("Hello Kumar");
+				//$("#res").html("<h1>Hello Kumar</h1>");
+
+				//$("p").add("div").addClass("widget");
+				// var pdiv = $( "p" ).add( "div" );
+				// $("#res").add();
+				//$("#res").add("<p>This is Para</p>").appendTo("div");
+			});
+
+			// $(document).on("click",".add", function() {
+			// 	// let btnValue = $(".add").val();
+			// 	let btnValue = $(this).val();
+			// 	console.log(btnValue);
+			// });
+
+			$(document).on("click",".slideDown", function() {
+
+				// $( "#book" ).slideToggle(5000, function() {
+				//     //alert("Ho Gaya")
+				//   });
+
+				// $( "#book" ).fadeIn(5000, function() {
+				//     alert("Ho Gaya")
+				//   });
+
+				$( "#book" ).fadeOut(5000, function() {
+				    alert("Ho Gaya")
+				  });
+			});
+
+		});
+	</script>
+</body>
+</html>

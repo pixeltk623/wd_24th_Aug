@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+	<style type="text/css">
+		.box {
+			width: 150px;
+			height: 150px;
+		}
+		#box1 {
+			background-color: orange;
+		}
+		#box2 {
+			background-color: #F2C0CC;
+		}
+		#box3 {
+			background-color: blue;
+		}
+		div + div {
+			margin-top: 10px;
+		}
+	</style>
+</head>
+<body>
+	<div class="container">
+		<div id="box1" class="box"></div>
+		<div id="box2" class="box"></div>
+		<div id="box3" class="box"></div>
+	</div>
+	<br><br>
+	<button type="button" class="fade">Fade</button>
+	<script type="text/javascript">
+		$(document).ready(function(){
+			$(document).on("click",".fade", function() {
+				// $( "#box1" ).fadeTo(10000, 0.5 ,  function() {
+				//     //alert("Ho Gaya")
+				// });
+				// $( "#box2" ).fadeTo(8000,  0.5 , function() {
+				//     //alert("Ho Gaya")
+				// });
+				// $( "#box3" ).fadeTo(5000, 0.5 ,  function() {
+				//     //alert("Ho Gaya")
+				// });
+
+				$( "#box1" ).fadeToggle(1000,   function() {
+				    //alert("Ho Gaya")
+				});
+				$( "#box2" ).fadeToggle(1000,  function() {
+				    //alert("Ho Gaya")
+				});
+				$( "#box3" ).fadeToggle(5000,   function() {
+				    //alert("Ho Gaya")
+				});
+			});
+		});
+	</script>
+</body>
+</html>
