@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+</head>
+<body>
+
+	<form method="post">
+		<!-- <label>First Number</label>
+		<input type="text" name="" value="" id="fnum">
+		<br><br>
+		<label>Second Number</label>
+		<input type="text" name="" value="" id="snum">
+		<br><br>
+		<button type="button">Swap</button> -->
+
+		<!-- <select class="city">
+			<option value="">Select</option>
+			<option value="Vadodara">Vadodara</option>
+			<option value="Surat">Surat</option>
+			<option value="Anand">Anand</option>
+		</select> -->
+		<label>Qty</label>
+		<button type="button">-</button>
+		<input type="number" name="" id="qty">
+		<br><br>
+		<button type="button">+</button>
+
+
+
+		<input type="text" name="" id="result">
+	</form>
+	<form>
+		  <input id="target" type="text" value="Hello there" value="Test">
+	</form>
+	<p>Hello</p>
+	<div id="other">
+	  Trigger the handler
+	</div>
+	
+	<script type="text/javascript">
+		$(document).ready(function(){
+			// var nameOfUser = $("#name").val()
+
+			// console.log(nameOfUser);
+
+			// $(document).on("click", "button", function() {
+
+			// 	let a = eval($("#fnum").val())
+			// 	let b = eval($("#snum").val())
+
+			// 	console.log(a); // 10
+			// 	console.log(b); // 20
+
+			// 	a = a + b // 30
+			// 	b = a-b // 30 - 20 = 10
+			// 	a = a-b // 30 - 10 // 20
+
+			// 	console.log(a);
+			// 	console.log(b);
+
+			// 	$("#fnum").val(a)
+			// 	$("#snum").val(b)
+
+			// });
+
+			// $(document).on("change", ".city", function(){
+			// 	//console.log($(this).val());
+			// 	//alert("Hello")
+
+			// 	$("#result").val($(this).val())
+			// });
+
+
+			// $(document).on("change", "#qty", function(){
+				
+			// 	const fixedPrice = 500; 
+			// 	let qty = $(this).val()
+
+			// 	console.log(fixedPrice*eval(qty));
+			// 	$("#result").val(fixedPrice*eval(qty))
+				
+			// });
+
+			// $( "#target" ).select(function() {
+			//   console.log( "Handler for .select() called." );
+			// });
+
+			$(document).on("click","#target", function(){
+				console.log( "Handler for .select() called." );
+				$( "#target" ).blur();
+
+				$( "p" ).blur();
+			});
+		});
+	</script>
+</body>
+</html>
