@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<script src="https://code.jquery.com/jquery-3.5.0.js"></script>
+	<style type="text/css">
+		div {
+			padding: 20px 20px 0px 0px;
+		}
+	</style>
+</head>
+<body>
+	<form method="post">
+		<div>
+			<label>Name: </label>
+			<input type="text" name="name" id="name">
+			<div id="e1"></div>
+		</div>
+		<div>
+			<label>Gender: </label>
+			<input type="radio" name="gender" value="Male">Male
+			<input type="radio" name="gender" value="Female">Female
+			<div id="e2"></div>
+		</div>
+
+		<div>
+			<label>Hobby: </label>
+			<input type="checkbox" name="hobby" value="Cricket">Cricket
+			<input type="checkbox" name="hobby" value="Football">Football
+			<input type="checkbox" name="hobby" value="Tennis">Tennis
+			<div id="e3"></div>
+		</div>
+		<div>
+			<label>City: </label>
+			<select name="city" id="city">
+				<option value="">Select</option>
+				<option value="Vadodara">Vadodara</option>
+				<option value="Surat">Surat</option>
+				<option value="Bharuch">Bharuch</option>
+			</select>
+			<div id="e4"></div>
+		</div>
+
+		<div>
+			<label>Profile Pic</label>
+			<input type="file" name="file" id="file">
+			<div id="e5"></div>
+		</div>
+
+		<div>
+			<input type="submit" name="submit" class="submit">
+		</div>
+		
+
+	</form>
+
+	<script type="text/javascript">
+		$(document).ready(function(){
+
+			$("#e1").css("display","none");
+			$("#e2").css("display","none");
+			$("#e3").css("display","none");
+			$("#e4").css("display","none");
+			$("#e5").css("display","none");
+
+			$(document).on("click", ".submit", function(e) {
+				e.preventDefault();
+				let nameOfUser = $("#name").val()
+				let gender = $("[name=gender]");
+				let hobby = $("[name=hobby]");
+				let city = $("#city").val()
+				let profilePic = $("#file");
+				let genderValue = "";
+				let hobbyValue = []
+
+				if (nameOfUser=='') {
+					$("#e1").html("<span>Name can not be blank</span>")
+					$("#e1").css({"display": "block", "color": "red"});
+				} else {
+					$("#e1").text("")
+					$("#e1").css({"display": "none"});
+				}
+
+
+				for(var i=0; i<gender.length; i++) {
+
+					if (gender[i].checked) {
+						genderValue += gender[i].value;
+					}
+				}
+
+				if(genderValue=='') {
+					$("#e2").html("<span>Gender is Not selected</span>")
+					$("#e2").css({"display": "block", "color": "red"});
+				} else {
+					$("#e2").text("")
+					$("#e2").css({"display": "none"});
+				}
+
+
+				for(var i=0; i<hobby.length; i++) {
+
+					if (hobby[i].checked) {
+						hobbyValue.push(hobby[i].value);
+					}
+				}
+
+				if(hobbyValue.length<1) {
+					$("#e3").html("<span>Hobby is Not selected</span>")
+					$("#e3").css({"display": "block", "color": "red"});
+				} else {
+					$("#e3").text("")
+					$("#e3").css({"display": "none"});
+				}
+
+
+				if (city=='') {
+					$("#e4").html("<span>City is Not selected</span>")
+					$("#e4").css({"display": "block", "color": "red"});
+				} else {
+					$("#e4").text("")
+					$("#e4").css({"display": "none"});
+				}
+
+
+				if(profilePic[0].files.length==0) {
+					$("#e5").html("<span>File is Not selected</span>")
+					$("#e5").css({"display": "block", "color": "red"});
+				} else {
+					$("#e5").text("")
+					$("#e5").css({"display": "none"});
+				}
+
+				// if(city!='') {
+
+				// 	 $(this).unbind( e );
+				// }
+
+				if(nameOfUser!='' && genderValue != '' && hobbyValue.length>0 && profilePic[0].files.length>0) {
+
+					console.log(nameOfUser);
+					console.log(genderValue);
+					console.log(hobbyValue);
+					console.log(city);
+					console.log(profilePic[0].files[0].name);
+
+				}
+
+			});
+		});
+	</script>
+</body>
+</html>
