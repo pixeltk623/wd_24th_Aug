@@ -104,12 +104,12 @@ function getNameOfById() {
 	// h1.style.margin = "5px";
 	// h1.style.color = "white";
 
-	h1.style.cssText = `
-  display: block; 
-  background-color: black;
-  padding: 15px;
-  margin: 5px;
-  color: white;
+											h1.style.cssText = `
+										  display: block; 
+										  background-color: black;
+										  padding: 15px;
+										  margin: 5px;
+										  color: white;
 `;
 
 	// var h1 = document.getElementsByClassName("h1Class");

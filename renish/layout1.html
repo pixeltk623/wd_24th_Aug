@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>layout</title>
+	<style type="text/css">
+		* {
+			box-sizing: border-box;
+			margin: ;
+			padding: ;
+		}
+
+		header {
+			border: 2px solid black;
+			background: skyblue;
+		}
+
+		nav {
+            border: 2px solid black;
+            background: skyblue;
+            
+		}
+
+		nav ul {
+			list-style-type: none;
+			overflow: hidden;
+			
+		}
+
+		
+        nav ul li a {
+        	dislay: inline-block;
+        	padding: 5px 15px;
+        	float: right;
+
+        }
+
+        
+
+		main {
+			border: 2px solid black;
+			text-align: center;
+            float: left;
+            width: 80%;
+            height: 200px;
+		}
+
+		aside{
+			border: 2px solid black;
+			text-align: center;
+			float: left;
+			width: 20%;
+			height: 200px;
+		}
+
+
+
+		footer {
+			border: 2px solid black;
+			text-align: center;
+			background-color: skyblue;
+		}
+  		
+  		section::after {
+  			content: "";
+  			display: table;
+  			clear: both;
+  		}
+
+  		@media screen and (min-width: 320px) and (max-width: 800px){
+  			nav ul li a {
+  				float: none;
+  				text-align: center;
+
+  			}	
+  			
+
+  			main {
+  				float: none;
+  				width: 100%;
+  			}
+    		 
+    		 aside {
+    		 	float: none;
+    		 	width: 100%;
+    		 }
+  		}
+	</style>
+</head>
+<body>
+
+   <header>
+   	<h2>HEADER</h2>
+   </header>
+
+   <nav>
+   	<ul>
+   		<li><a href="">CONTACT</a></li>
+   		<li><a href="">ABOUT</a></li>
+   		<li><a href="">HOME</a></li>
+	</ul>
+   </nav>
+   <section>
+   	<main>
+   		<h2>Content area</h2>
+   		
+   	</main>
+
+    <aside>
+    	<h2>Recent</h2>
+    </aside>
+   </section>
+
+   <footer>
+   	<h2>FOOTER</h2>
+   </footer>
+
+</body>
+</html>

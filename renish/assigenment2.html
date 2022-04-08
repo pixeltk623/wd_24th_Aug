@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Registration Form</title>
+	<style type="text/css">
+		header {
+			width: 98.2%;
+			height: 40px;
+			background: linear-gradient(to bottom, #ccffcc -2%, #3399ff 67%);
+			text-align: center;
+			color: maroon;
+			font-size: 14px;
+			margin: 10px;
+		}
+		main {
+			background:#CFE0F2;
+			padding: 13px;
+			margin: 10px;
+			
+		}
+		h2 {
+			color: maroon;
+		}
+
+		.u-table{
+			margin-left: 490px;
+		}
+		
+		td {
+			text-align: right;
+			color: blue;
+		}
+		/*td input {
+			margin-left: 10px;
+		}*/
+		.p-col-1 {
+			width: 50%;
+			float: left;
+			display: inline-block;
+
+		}
+		.p-col-2{
+			width: 50%;
+			float: left;
+			display: inline-block;
+		}
+		.personal::after {
+			clear: both;
+			display: table;
+			content: "";
+		}
+		
+		.p-table-1 {
+			margin-left: 250px;
+			text-align: center;
+		}
+		.a-col-1 {
+			float: left;
+			width: 50%;
+
+		}
+
+		.a-col-2 {
+			float: left;
+			width: 50%;
+		}
+		.account::after {
+			content: "";
+			clear: both;
+			display: table;
+		}
+		
+		.a-l {
+			margin-left: 230px;
+		}
+		.a-l-1 {
+			margin-left: 161px;
+		}
+		.input {
+			margin-right: 200px;
+		}
+		button {
+			width: 90px;
+			height: 30px;
+			background-color: #5993C9;
+			text-align: center;
+			border-style: none;
+			position: relative;
+			left: 600px;
+			margin:5px;
+		}
+	</style>
+</head>
+<body>
+	<header>
+		<h1>Individual Registration</h1>
+	</header>
+	<main>
+		<h2>User Particular</h2>
+		<table class="u-table">
+			<tr>
+				<td>
+					<label>Login Id</label>
+					<input type="text" name="">
+				</td>
+			</tr>
+			<tr>
+				<td>
+					<label>Password</label>
+					<input type="text" name="">
+				</td>
+			</tr>
+			<tr>
+				<td>
+					<label>Creat Password</label>
+					<input type="text" name="">
+				</td>
+			</tr>
+		</table>
+		<div class="personal">
+			<h2>Personal Particular</h2>
+			<div class="p-col-1">
+					<table class="p-table-1">
+						<tr>
+							<td>
+								<label>Salutation</label>
+							</td>
+							<td>
+								<select name="Salutation">
+									<option value="select">select</option>
+								</select>
+							</td>
+						</tr>
+						<tr>
+							<td>
+								<label>Middle Name</label>
+							</td>
+							<td>
+								<input type="text" name="middle name">
+							</td>
+						</tr>
+						<tr>
+							<td>
+								<label>Resident Status</label>
+							</td>
+							<td>
+								<select name="resident-satatus">
+									<option value="select">select</option>
+								</select>
+							</td>
+						</tr>
+						<tr>
+							<td>
+								<label>Email Address</label>
+							</td>
+							<td>
+								<input type="email" name="">
+							</td>
+						</tr>
+					</table>
+			</div>
+			<div class=p-col-2>
+				<table class="p-table">
+					<tr>
+						<td>
+							<label>First Name</label>
+						</td>
+						<td>
+							<input type="text" name="">
+						</td>
+					</tr>
+					<tr>
+						<td>
+							<label>Last Name</label>
+						</td>
+						<td>
+							<input type="text" name="">
+						</td>
+					</tr>
+					<tr>
+						<td>
+							<label>Country</label>
+						</td>
+						<td>
+							<select name="country">
+								<option value="select">select</option>
+							</select>
+						</td>
+					</tr>
+					<tr>
+						<td>
+							<label >Mobile Number</label>
+						</td>
+						<td>
+							<input type="number" name="">
+						</td>
+					</tr>
+				</table>
+
+			</div>
+		</div>
+		<div class="account">
+			<h2>Account Particular</h2>
+			<table class="a-col-1">
+				<tr>
+					<td>
+						<label class="a-l">15 Didit Account no</label>
+					</td>
+					<td>
+						<input type="number" name="account number">
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<label class="a-l">Fund Transfer</label>
+					</td>
+					<td>
+						<select name="select">
+							<option value="select">select</option>
+						</select>
+					</td>
+				</tr>
+
+			</table>
+			<table class="a-col-2">
+				<tr>
+					<td>
+						<label class="a-l-1">Nick Name</label>
+					</td>
+					<td>
+						<input type="text" name="" class="input">
+					</td>
+				</tr>
+			</table>
+		</div>
+		<div class="declaration">
+			<h2>Declaration</h2>
+			<p>I have read,understood and hereby agree to the term and confident in respect of all product and channel.
+			</p>
+			<p>
+				I understand that any changes in the term and condition applicable to this relation would be made available to me on requst at any IOB branches. I confirm that all account under this login name are operate singly and in case of joint account operate by either survivor/anyone or survivor(s) under his her joint name respectivly .I do declar that informatation furnished in this form is true to the best of my knowledgeand belief.
+
+			</p>
+		</div>
+		<div class="button">
+			<button type="button">Submit</button>
+			<button type="button">Reset</button>
+			
+		</div>
+	</main>
+</body>
+</html>

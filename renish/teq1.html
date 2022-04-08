@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+	<style type="text/css">
+		.row-box {
+			width: 100%;
+			background-color: #ebebe0;
+			height: 340px;
+			/*margin-left: 5px;*/
+			
+
+		}
+		
+		.row-box1 h2 {
+			color: #005B98;
+			font-size: 35px;
+			font-family: Roboto,Helvetica Neue,sans-serif;
+			margin: 45px;
+		}
+		.row-box1 p {
+			font-size: 30px;
+			font-family: Roboto,Helvetica Neue,sans-serif;
+			margin: 45px;
+		}
+		.img {
+			margin-left: 80px;
+		}
+
+		img {#005B98
+			border: 1px #ebebe0;
+			background-color: white;
+			border-radius:30px ;
+			height: 165px;
+			width: 165px;
+			margin: 2px;
+			margin-left: 40px;
+		}
+		h1 {
+			margin-inline: 10px;
+			color: #005B98;
+		}
+		.advantage {
+			margin-left: 40px;
+		}
+		.row-photo {
+			border: 1px solid lightgrey;
+			width: 30%;
+			margin: 10px;
+			float: left;
+			height: 425px;
+
+			/*height: 300px;*/
+		}
+
+		.row-photo p {
+			font-family: Roboto,Helvetica Neue,sans-serif;
+			font-size: 18px;
+			margin-inline: 12px
+		}
+		.row-photo img {
+			width: 93%;
+			height: 30vh;
+			/*margin: 15px 10px 15px 15px;*/
+			border-radius: 0px;
+			position: relative;
+			top: 10px;
+			right: 25px;
+		}
+		.row-photo h2 {
+			/*border: 1px solid lightgrey;*/
+			border-bottom: 1px solid lightgrey;
+			margin-left: 10px;
+			margin-right: 10px;
+			font-weight: 600;
+			font-size: 25px;
+			font-family: Roboto,Helvetica Neue,sans-serif;
+			padding: 10px;
+			color: grey;
+		}
+		row::after{
+			display: table;
+			content: "";
+			clear: both;
+		}
+		@media screen and (min-width: 320px) and (max-width: 820px) {
+			.row-box{
+				width: 100%;
+				padding: 0px;
+				height: 450px;
+				background-color: white;
+			}
+			.img {
+				width: 100%;
+				height: 700px;
+				margin: 40px;
+				
+			}
+			.img img {
+				width: 80px;
+				height: 50px;
+				margin: 18px;
+
+			}
+			.row-photo{
+				width: 100%;
+				margin-bottom: 2px;
+				padding: 0px;
+			}
+
+
+		}
+	</style>
+</head>
+<body>
+	<div class="row-box">
+		<div class="row-box1">
+			<h2>Clients</h2>
+			<p>Trusted by the best</p>
+		</div>
+		<div class="img">
+			<img src="https://www.teqstories.com/assets/images/01.png">
+			<img src="https://www.teqstories.com/assets/images/02.png">
+			<img src="https://www.teqstories.com/assets/images/03.png">
+			<img src="https://www.teqstories.com/assets/images/04.png">
+			<img src="https://www.teqstories.com/assets/images/05.png">
+			<img src="https://www.teqstories.com/assets/images/06.png">
+		</div>
+	</div>
+	<h1>The Teqstories Advantage</h1>
+	<div class="advantage">
+		<div class="row-photo">
+			<img src="https://www.teqstories.com/assets/images/adv03.jpg">
+			<h2>Free Demo Session</h2>
+			
+			<p>Experience the Demo session from our best instructors by getting in touch with our technical representatives.</p>
+		</div>
+		<div class="row-photo">
+			<img src="https://www.teqstories.com/assets/images/adv02.jpg">
+			<h2>Access to LMS</h2>
+			
+			<p>The TeqStories LMS portal keeps you updated with a huge library of recorded video lectures and supports with an active community for all your queries.</p>
+		</div>
+		<div class="row-photo">
+			<img src="https://www.teqstories.com/assets/images/adv01.jpg">
+			<h2>24/7 Technical Support</h2>
+			
+			<p>Our senior mentors are always happy to guide on your doubt clarifications and provide consultation to ensure a smooth learning experience.</p>
+		</div>
+	</div>
+
+</body>
+</html>

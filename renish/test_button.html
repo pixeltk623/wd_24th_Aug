@@ -1,0 +1,467 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title></title>
+	<link rel="stylesheet" type="text/css" href="font-awesome/css/font-awesome.min.css">
+	<style type="text/css">
+
+		.css_button {
+			background-color:rgb(13, 201, 4) ;
+			width: 150px;
+			height: 50px;
+			color: white;
+			font-size: 18px;
+			border-style: none;
+		}
+		.green {
+			background-color: rgb(13, 201, 4);
+			width: 100px;
+			height: 50px;
+			color: white;
+			font-size: 18px;
+			border-style: none;
+		}
+		.blue {
+			background-color: blue;
+			width: 100px;
+			height: 50px;
+			color: white;
+			font-size: 18px;
+			border-style: none;
+		}
+		.red {
+			background-color: red;
+			width: 100px;
+			height: 50px;
+			color: white;
+			font-size: 18px;
+			border-style: none;
+		}
+		.grey {
+			background-color: grey;
+			width: 100px;
+			height: 50px;
+			color: white;
+			font-size: 18px;
+			border-style: none;
+		}
+		.black {
+			background-color: rgb(76, 65, 65);
+			width: 100px;
+			height: 50px;
+			color: white;
+			font-size: 18px;
+			border-style: none;
+		}
+		.size-1 {
+			background-color: rgb(13, 201, 4);
+			color: white;
+			padding: 10px;
+			border-style: none;
+		}
+		
+		.size-2 {
+			background-color: blue;
+			color: white;
+			padding: 12px;
+			border-style: none;
+		}
+		.size-3 {
+			background-color: red;
+			color: white;
+			padding: 16px;
+			border-style: none;
+		}
+		.size-4 {
+			background-color: grey;
+			color: white;
+			padding: 20px;
+			border-style: none;
+		}
+		.size-5 {
+			background-color: rgb(76, 65, 65);
+			color: white;
+			padding: 26px;
+			border-style: none;
+		}
+		.size-a {
+			background-color: rgb(13, 201, 4);
+			color: white;
+			padding: 10px 24px;
+			border-style: none;
+		}
+		.size-b {
+			background-color: blue;
+			color: white;
+			padding: 12px 28px;
+			border-style: none;
+		}
+		.size-c {
+			background-color: red;
+			color: white;
+			padding: 14px 40px;
+			border-style: none;
+		}
+		.size-d {
+			background-color: grey;
+			color: white;
+			padding: 32px 16px;
+			border-style: none;
+		}
+		.size-e {
+			background-color: rgb(76, 65, 65);
+			color: white;
+			padding: 16px;
+			border-style: none;
+		}
+		.round-1 {
+			background-color:rgb(13, 201, 4) ;
+			color: white;
+			padding: 10px;
+			border-radius: 2px;
+			border: 1px;
+			border-style: none;
+		}
+		.round-2 {
+			background-color:blue ;
+			color: white;
+			padding: 10px;
+			border-radius: 4px;
+			border: 1px;
+			border-style: none;
+		}
+		.round-3 {
+			background-color:red ;
+			color: white;
+			padding: 10px;
+			border-radius: 8px;
+			border: 1px;
+			border-style: none;
+		}
+		.round-4 {
+			background-color:grey ;
+			color: white;
+			padding: 10px;
+			border-radius: 12px;
+			border: 1px;
+			border-style: none;
+		}
+		.round-5 {
+			background-color:rgb(76, 65, 65) ;
+			color: white;
+			padding: 10px;
+			border-radius: 50%;
+			border: 1px;
+			border-style: none;
+		}
+		.color-1 {
+			border-color: rgb(13, 201, 4);
+			padding: 15px;
+			
+			
+		}
+		.color-2 {
+			border-color: blue;
+			padding: 15px;
+			
+			
+		}
+		.color-3 {
+			border-color: red;
+			padding: 15px;
+			
+			
+		}
+		.color-4 {
+			border-color: grey;
+			padding: 15px;
+			
+			
+		}
+		.color-5 {
+			border-color: rgb(76, 65, 65);
+			padding: 15px;
+			
+			
+		}
+		.hover-1 {
+			background-color: rgb(13, 201, 4);
+			padding: 15px;
+			color: white;
+		
+
+		}
+		.hover-2 {
+			background-color: blue;
+			padding: 15px;
+			color: white;
+			
+
+		}
+		.hover-3 {
+			background-color: red;
+			padding: 15px;
+			color: white;
+			
+
+		}
+		.hover-4 {
+			background-color: grey;
+			padding: 15px;
+			color: white;
+			
+
+		}
+		.hover-5 {
+			background-color: rgb(76, 65, 65);
+			padding: 15px;
+			color: white;
+			
+
+		}
+		.hover-1[type=button]:hover{
+			background-color: white;
+			border-color: rgb(13, 201, 4);
+			color: black;
+		}
+		.hover-2[type=button]:hover{
+			background-color: white;
+			border-color: blue;
+			color: black;
+		}
+		.hover-3[type=button]:hover{
+			background-color: white;
+			border-color: red;
+			color: black;
+		}
+		.hover-4[type=button]:hover{
+			background-color: white;
+			border-color: grey;
+			color: black;
+		}
+		.hover-5[type=button]:hover{
+			background-color: white;
+			border-color: rgb(76, 65, 65);
+			color: black;
+		}
+		.hover-a {
+			border-color: rgb(13, 201, 4);
+			padding: 15px;
+			
+		}
+		.hover-b {
+			border-color: blue;
+			padding: 15px;
+			
+		}
+		.hover-c {
+			border-color: red;
+			padding: 15px;
+			
+		}
+		.hover-d {
+			border-color: grey;
+			padding: 15px;
+			
+		}
+		.hover-e {
+			border-color: rgb(76, 65, 65);
+			padding: 15px;
+			
+		}
+		.hover-a:hover {
+			background-color: rgb(13, 201, 4);
+			color: white;
+		}
+		.hover-b:hover {
+			background-color: blue;
+			color: white;
+		}
+		.hover-c:hover {
+			background-color: red;
+			color: white;
+		}
+		.hover-d:hover {
+			background-color: grey;
+			color: white;
+		}
+		.hover-e:hover {
+			background-color: rgb(76, 65, 65);
+			color: white;
+		}
+		.shadow-1 {
+			background-color: rgb(13, 201, 4);
+			color: white;
+			border-style: none;
+			padding: 15px 20px;
+			box-shadow:5px 5px  rgba(0, 0, 0, 0.18) ;
+
+		}
+		.shadow-2 {
+			background-color: rgb(13, 201, 4);
+			color: white;
+			border-style: none;
+			padding: 15px 20px;
+			margin-inline: 12px;
+
+		}
+		.shadow-2:hover{
+			box-shadow: 5px 5px rgba(0, 0, 0, 0.18);
+		}
+		.disabled-1 {
+			background-color: blue;
+			padding: 15px;
+			color: white;
+			border-style: none;
+		}
+		.disabled-2 {
+			background-color: lightgreen;
+			color: white;
+			cursor: not-allowed;
+			padding: 15px;
+			border-style: none;
+		}
+		.width-1 {
+			background-color: green;
+			color: white;
+			width: 250px;
+			border-style: none;
+			padding: 15px;
+		}
+		.width-2 {
+			background-color: blue;
+			color: white;
+			width: 50%;
+			border-style: none;
+			padding: 15px;
+		}
+		.width-3 {
+			background-color: red;
+			color: white;
+			width: 100%;
+			border-style: none;
+			padding: 15px;
+		}
+		.float {
+			float: left;
+			background-color: rgb(13, 201, 4);
+			color: white;
+			border-style: none;
+			padding: 15px;
+		} 
+		.float-a {
+			background-color: rgb(13, 201, 4);
+			color: white;
+			padding: 15px;
+			border:1px  solid black;
+			float: left;
+		}
+		.vertical {
+			background-color: rgb(13, 201, 4) ;
+			padding: 15px;
+			border-style: none;
+			border: 1px solid black;
+			width: 100px;
+
+		}
+	</style>
+</head>
+<body>
+ 	<h2>Basic Button Styling</h2>
+ 	<button type="button">default button</button>
+ 	<button type="button" class="css_button">css button</button>
+ 	<br><br>
+
+ 	<h2>button colors</h2>
+ 	<button type="button" class="green">green</button>
+ 	<button type="button" class="blue">blue</button>
+ 	<button type="button" class="red">red</button>
+ 	<button type="button" class="grey">grey</button>
+ 	<button type="button" class="black">black</button>
+ 	<br><br>
+ 	<h2>button size</h2>
+
+ 	<button type="button" class="size-1">10px</button>
+ 	<button type="button" class="size-2">12px</button>
+ 	<button type="button" class="size-3">16px</button>
+ 	<button type="button" class="size-4">20px</button>
+ 	<button type="button" class="size-5">24px</button>
+ 	<br><br>
+ 	<button type="button" class="size-a">10px24px</button>
+ 	<button type="button" class="size-b">12px28px</button>
+ 	<button type="button" class="size-c">14px40px</button>
+ 	<button type="button" class="size-d">32px16px</button>
+ 	<button type="button" class="size-e">16px</button>
+ 	<br><br>
+
+ 	<h2>Round Button</h2>
+ 	<button type="button" class="round-1">2px</button>
+ 	<button type="button" class="round-2">4px</button>
+ 	<button type="button" class="round-3">8px</button>
+ 	<button type="button" class="round-4">12px</button>
+ 	<button type="button" class="round-5">50%</button>
+ 	<br><br>
+
+ 	<h2>Colored Button Border</h2>
+ 	<button type="button" class="color-1">Green</button>
+ 	<button type="button" class="color-2">Blue</button>
+ 	<button type="button" class="color-3">Red</button>
+ 	<button type="button" class="color-4">Grey</button>
+ 	<button type="button" class="color-5">Black</button>
+ 	<br><br>
+
+ 	<h2>Hoverable Buttons</h2>
+ 	<button type="button" class="hover-1">Green</button>
+ 	<button type="button" class="hover-2">Blue</button>
+ 	<button type="button" class="hover-3">Red</button>
+ 	<button type="button" class="hover-4">Grey</button>
+ 	<button type="button" class="hover-5">Black</button>
+ 	<br><br>
+
+ 	<button type="button" class="hover-a">Green</button>
+ 	<button type="button" class="hover-b">Blue</button>
+ 	<button type="button" class="hover-c">Red</button>
+ 	<button type="button" class="hover-d">Grey</button>
+ 	<button type="button" class="hover-e">Black</button>
+ 	<br><br>
+
+ 	<h2>Shadow Button</h2>
+ 	<button type="button" class="shadow-1">Shadow Button</button>
+ 	<button type="button" class="shadow-2">Shadow on hover</button>
+ 	<br><br>
+
+ 	<h2>Disabled Button</h2>
+ 	<button type="button" class="disabled-1">Normal Button</button>
+ 	<button type="button" class="disabled-2">Disabled Button</button> 
+ 	<br><br>
+
+ 	<h2>Button Width</h2>
+ 	<button type="button" class="width-1">250px</button>
+ 	<br><br>
+ 	<button type="button" class="width-2">50%</button>
+ 	<br><br>
+ 	<button type="button" class="width-3">100%</button>
+ 	<br><br>
+
+ 	<h2>Button Groups</h2>
+ 	<button type="button" class="float">Button</button>
+ 	<button type="button" class="float">Button</button>
+ 	<button type="button" class="float">Button</button>
+ 	<button type="button" class="float">Button</button>
+ 	<br><br>
+
+ 	<h2>Border Button Group</h2>
+ 	<button type="button" class="float-a">Button</button>
+ 	<button type="button" class="float-a">Button</button>
+ 	<button type="button" class="float-a">Button</button>
+ 	<button type="button" class="float-a">Button</button>
+ 	<br><br>
+
+ 	<h2>Vertical Button Group</h2>
+ 	<div class="main"><button type="button" class="vertical">button</button></div>
+ 	<div class="main"><button type="button" class="vertical">button</button></div>
+ 	<div class="main"><button type="button" class="vertical">button</button></div>
+ 	<div class="main"><button type="button" class="vertical">button</button></div>
+ 	</body>
+</html>

@@ -1,14 +1,14 @@
 'use strict'
 // var bulb = document.getElementById("bulb");
 
-// function onBulb() {
-// 	bulb.src = "media/ONbulb.jpg";
-// 	// bulb.width = "500";
-// 	// bulb.height = "500";
-// }
+function onBulb() {
+ 	bulb.src = "media/ONbulb.jpg";
+  bulb.width = "500";
+ bulb.height = "500";
+ }
 
-// function offbulb() {
-// 	bulb.src = "media/OFFbulb.jpg";
+ function offbulb() {
+ 	bulb.src = "media/OFFbulb.jpg";
 
 
 // }
